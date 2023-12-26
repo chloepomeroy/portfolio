@@ -1,3 +1,20 @@
+/* @font-face {
+  font-family: ;
+  src: ;
+  font-weight: ;
+} */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+}
+
 .App {
   text-align: center;
 }
