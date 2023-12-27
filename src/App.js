@@ -11,7 +11,7 @@ import Layout from "./components/Layout";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename={"/portfolio"}>
+      <BrowserRouter basename={"http://chloepomeroy.github.io/portfolio"}>
         <Routes>
           <Route path="/" element={<Layout />}>
             {/* <Route index element={<Banner />} />
