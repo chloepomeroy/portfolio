@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import Banner from "./components/Banner";
@@ -11,15 +11,13 @@ import Layout from "./components/Layout";
 function App() {
   return (
     <div className="App">
-      <HashRouter basename={"http://chloepomeroy.github.io/portfolio"}>
+      <NavBar />
         <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Banner />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-          </Route>
+          <Route path="/" element={<Layout />}/>
+          {/* <Route index element={<Banner />} /> */}
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
-      </HashRouter>
     </div>
   );
 }
