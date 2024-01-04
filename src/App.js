@@ -11,7 +11,6 @@ import Layout from "./components/Layout";
 function App() {
   return (
     <div className="App">
-      <NavBar />
         <Routes>
           <Route path="/" element={<Layout />}/>
           {/* <Route index element={<Banner />} /> */}

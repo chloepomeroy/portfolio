@@ -160,6 +160,13 @@ export default function NavBar() {
             >
               <GitHubIcon sx={{ fontSize: { xs: 20, md: 30 } }} />
             </IconButton>
+            <IconButton
+              aria-label="kaggle"
+              href="https://www.kaggle.com/chloepomeroy"
+              color="inherit"
+            >
+              <FontAwesomeIcon icon={faKaggle} sx={{ fontSize: { xs: 20, md: 30 } }} />
+            </IconButton>
             <Button
               component={Link}
               to="/contact"
