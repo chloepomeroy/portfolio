@@ -13,6 +13,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "fontawesome";
 
 const pages = [
   { page: "Home", url: "/" },
@@ -165,7 +166,7 @@ export default function NavBar() {
               href="https://www.kaggle.com/chloepomeroy"
               color="inherit"
             >
-              <FontAwesomeIcon icon={faKaggle} sx={{ fontSize: { xs: 20, md: 30 } }} />
+              <FontAwesomeIcon icon="fa-brands fa-kaggle" sx={{ fontSize: { xs: 20, md: 30 } }} />
             </IconButton>
             <Button
               component={Link}
