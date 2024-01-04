@@ -29,8 +29,8 @@
 import './App.css';
 import React from 'react';
 import { Route, Switch, Link } from "react-router-dom";
-import About from './components/About';
-import Home from './components/Home';
+import About from './components/Contact';
+import Home from './components/Layout';
 
 class App extends React.Component {
   render() {
