@@ -1,0 +1,62 @@
+#form {
+    border: 1px solid black;
+    ;
+}
+
+#summary {
+    background-color: rgba(198, 219, 239, 0.4);
+    border-radius: 20px;
+}
+
+#colorLegend {
+    background-color: rgba(198, 219, 239, 0.4);
+    border-radius: 20px;
+}
+
+h1 {
+    margin-left: 20px;
+    margin-bottom: 2px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.neighborhood_summary_title {
+    margin-left: 15px;
+
+}
+
+.neighborhood_summary_text {
+    margin-left: 30px;
+    font-size: 17px;
+
+}
+
+#predicted_rent {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(198, 219, 239, 0.8);
+}
+
+#predicted_rent_num {
+    font-size: 36px;
+    padding-top: 20px;
+    font-weight: 500;
+
+}
+
+#predicted_change {
+    font-size: 30px;
+    padding-top: 15px;
+    font-weight: 500;
+
+}

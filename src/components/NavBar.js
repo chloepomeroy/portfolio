@@ -19,7 +19,7 @@ const pages = [
   { page: "Home", url: "/" },
   { page: "About", url: "/" },
   { page: "Projects", url: "/projects" },
-  { page: "Blog", url: "/" },
+  { page: "Blog", url: "/renting" },
 ];
 // const projects = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -166,7 +166,7 @@ export default function NavBar() {
               href="https://www.kaggle.com/chloepomeroy"
               color="inherit"
             >
-              <img src={kaggleIcon} style={{ height: "1em"}} />
+              <img src={kaggleIcon} style={{ height: "1em" }} />
             </IconButton>
             <Button
               component={Link}
