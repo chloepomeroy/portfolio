@@ -1,18 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.29da65e0.css",
-    "main.js": "/portfolio/static/js/main.2119cbae.js",
+    "main.js": "/portfolio/static/js/main.3727c313.js",
     "static/media/psdc.PNG": "/portfolio/static/media/psdc.dd61e063f88ae9d520c5.PNG",
     "static/media/petMatching.PNG": "/portfolio/static/media/petMatching.d8002d9ebe3b0f682600.PNG",
+    "static/media/mcmasterLogo.png": "/portfolio/static/media/mcmasterLogo.bb54b355bcc3e54b0069.png",
     "static/media/steamCozy.PNG": "/portfolio/static/media/steamCozy.cad0107cbe20290a458d.PNG",
     "static/media/rentingHelperImage.PNG": "/portfolio/static/media/rentingHelperImage.4b69581b6eb5ee74a0ae.PNG",
+    "static/media/algonquinLogo.png": "/portfolio/static/media/algonquinLogo.5291a9cee1e4d355fe63.png",
+    "static/media/gatechLogo.png": "/portfolio/static/media/gatechLogo.7805e3c5b8b9ad0b47a2.png",
     "static/media/kaggle-icon.svg": "/portfolio/static/media/kaggle-icon.827f287861646365ef2230061bf2f4a5.svg",
     "index.html": "/portfolio/index.html",
     "main.29da65e0.css.map": "/portfolio/static/css/main.29da65e0.css.map",
-    "main.2119cbae.js.map": "/portfolio/static/js/main.2119cbae.js.map"
+    "main.3727c313.js.map": "/portfolio/static/js/main.3727c313.js.map"
   },
   "entrypoints": [
     "static/css/main.29da65e0.css",
-    "static/js/main.2119cbae.js"
+    "static/js/main.3727c313.js"
   ]
 }
