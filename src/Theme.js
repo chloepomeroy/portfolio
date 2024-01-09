@@ -12,6 +12,7 @@ export const theme = createTheme({
     background: {
       default: "#2b2b2b",
       paper: "#212121",
+      lighter: "#353535"
     },
   },
 });

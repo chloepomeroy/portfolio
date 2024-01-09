@@ -19,7 +19,7 @@ const pages = [
   { page: "Home", url: "/" },
   { page: "About", url: "/" },
   { page: "Projects", url: "/projects" },
-  { page: "Blog", url: "/renting" },
+  { page: "Blog", url: "/" },
 ];
 // const projects = ['Profile', 'Account', 'Dashboard', 'Logout'];
 

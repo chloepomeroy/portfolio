@@ -2,17 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { ThemeProvider } from '@mui/material';
+import { ThemeProvider, CssBaseline } from '@mui/material';
 import { theme } from './Theme.js';
 import { HashRouter } from 'react-router-dom';
+import NavBar from './components/NavBar.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <HashRouter>
-    <ThemeProvider theme = {theme}>      
-    <App />    
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <NavBar />
+        <App />
+      </ThemeProvider>
     </HashRouter>
   </React.StrictMode>
 );

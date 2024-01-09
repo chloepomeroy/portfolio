@@ -7,7 +7,6 @@ import Banner from "./components/Banner";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Layout from "./components/Layout";
-import RentingPage from "./components/Projects/Renting";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         <Route path="/" element={<Layout />} />
         {/* <Route index element={<Banner />} /> */}
         <Route path="/projects" element={<Projects />} />
-        <Route path="/renting" element={<RentingPage />} />
       </Routes>
     </div>
   );

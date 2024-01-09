@@ -6,10 +6,6 @@ import { CssBaseline, Box } from "@mui/material";
 export default function Layout() {
   return (
     <>
-      <CssBaseline />
-      <NavBar />
-
-      <Outlet />
     </>
   );
 }
