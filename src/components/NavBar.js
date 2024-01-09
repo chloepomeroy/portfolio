@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -7,7 +7,6 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Button from "@mui/material/Button";
@@ -16,30 +15,29 @@ import { Link } from "react-router-dom";
 import kaggleIcon from "../assets/kaggle-icon.svg";
 
 const pages = [
-  { page: "Home", url: "/" },
-  { page: "About", url: "/" },
   { page: "Projects", url: "/projects" },
-  { page: "Blog", url: "/" },
+  { page: "Experience", url: "/experience" },
+  { page: "Education", url: "/education" },
+  { page: "About", url: "/about" },
 ];
-// const projects = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 export default function NavBar() {
-  const [activeLink, setActiveLink] = useState("Home");
-  const [scrolled, setScrolled] = useState(false);
+  const [activeLink, setActiveLink] = useState("Projects");
+  // const [scrolled, setScrolled] = useState(false);
   const [anchorElNav, setAnchorElNav] = useState(null);
 
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
+  // useEffect(() => {
+  //   const onScroll = () => {
+  //     if (window.scrollY > 50) {
+  //       setScrolled(true);
+  //     } else {
+  //       setScrolled(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  //   window.addEventListener("scroll", onScroll);
+  //   return () => window.removeEventListener("scroll", onScroll);
+  // }, []);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -106,7 +104,7 @@ export default function NavBar() {
               }}
             >
               {pages.map((page, i) => (
-                <MenuItem key={page.page + i} component={Link} to={page.url}>
+                <MenuItem key={page.page + i} component={Link} to={page.url} onClick={handleClickNavButton}>
                   <Typography textAlign="center">{page.page}</Typography>
                 </MenuItem>
               ))}
@@ -166,7 +164,7 @@ export default function NavBar() {
               href="https://www.kaggle.com/chloepomeroy"
               color="inherit"
             >
-              <img src={kaggleIcon} style={{ height: "1em" }} />
+              <img src={kaggleIcon} alt="Kaggle icon" style={{ height: "1em" }} />
             </IconButton>
             <Button
               component={Link}
