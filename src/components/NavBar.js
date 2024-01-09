@@ -55,7 +55,6 @@ export default function NavBar() {
     <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
@@ -147,7 +146,7 @@ export default function NavBar() {
           <Box sx={{ flexGrow: 0 }}>
             <IconButton
               aria-label="linkedin"
-              href="https://www.linkedin.com/in/chloe-pomeroy-95697513a/"
+              href="https://www.linkedin.com/in/chloepomeroy/"
               color="inherit"
             >
               <LinkedInIcon sx={{ fontSize: { xs: 20, md: 30 } }} />

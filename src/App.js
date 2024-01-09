@@ -3,11 +3,11 @@ import ReactDOM from "react-dom/client";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import About from "./components/About";
-import Education from "./components/Education";
-import Experience from "./components/Experience";
+import Projects from "./components/Pages/Projects";
+import Contact from "./components/Pages/Contact";
+import About from "./components/Pages/About";
+import Education from "./components/Pages/Education";
+import Experience from "./components/Pages/Experience";
 
 function App() {
   return (
