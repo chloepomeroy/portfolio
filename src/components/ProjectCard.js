@@ -47,7 +47,8 @@ export default function ProjectCard(props) {
                 </CardContent>
                 <CardActions>
                     <Button size="small" component={Link} to={moreLink}>Learn More</Button>
-                    <Button size="small" href={projectLink}>View Project</Button>
+                    {projectLink === "" ? "" : <Button size="small" href={projectLink}>View Project</Button>}
+
                 </CardActions>
             </Card >
         </Box >
