@@ -1,6 +1,6 @@
 import React from "react";
 import PageTitle from "../Titles";
-import { Grid, Box, Button } from "@mui/material";
+import { Grid, Button } from "@mui/material";
 
 //import images
 import azureDataSci from "../../assets/dataScienceCert.png"
@@ -10,30 +10,30 @@ import comptiaDataPlus from "../../assets/dataPlusCert.png"
 export default function Certifications() {
 
     return (
-        // <Box sx={{ width: "100%", justifyContent: "center" }}>
-        <Grid container spacing={2} padding={2} sx={{ justifyContent: "center" }}>
-            <Grid item xs={10} style={{ textAlign: "left" }}>
-                <PageTitle pageTitle="Certifications" />
-            </Grid>
-            <Grid item xs={10} marginBottom={2} style={{ textAlign: "left" }}>
-                <Button variant="outlined" href="https://www.credly.com/users/chloe-pomeroy">See All on Credly</Button>
-            </Grid>
-
-            <Grid container xs={10} spacing={2} padding={2} >
-                {/* <Grid container xs={10} spacing={1} padding={2} sx={{ justifyContent: "center" }}> */}
-                <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
-                    <img src={azureDataSci} width="400" height="400" />
+        <div id="certifications">
+            <Grid container spacing={2} padding={2} sx={{ justifyContent: "center" }}>
+                <Grid item xs={10} style={{ textAlign: "left" }}>
+                    <PageTitle pageTitle="Certifications" />
+                </Grid>
+                <Grid item xs={10} marginBottom={2} style={{ textAlign: "left" }}>
+                    <Button variant="outlined" href="https://www.credly.com/users/chloe-pomeroy">See All on Credly</Button>
                 </Grid>
 
-                <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
-                    <img src={azureDataEng} width="400" height="400" />
-                </Grid>
+                <Grid container spacing={2} padding={2} >
+                    <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
+                        <img src={azureDataSci} width="400" height="400" />
+                    </Grid>
 
-                <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
-                    <img src={comptiaDataPlus} width="400" height="400" />
+                    <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
+                        <img src={azureDataEng} width="400" height="400" />
+                    </Grid>
+
+                    <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
+                        <img src={comptiaDataPlus} width="400" height="400" />
+                    </Grid>
                 </Grid>
             </Grid>
-        </Grid>
+        </div>
     )
 
 }

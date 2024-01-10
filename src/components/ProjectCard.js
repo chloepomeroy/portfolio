@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Badge, Box, Grid, Stack } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 export default function ProjectCard(props) {
     const { image, imageTitle, cardTitle, cardSubTitle, cardDescription, technologiesUsed, moreLink, projectLink, projectType } = props
@@ -45,7 +46,7 @@ export default function ProjectCard(props) {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small" href={moreLink}>Learn More</Button>
+                    <Button size="small" component={Link} to={moreLink}>Learn More</Button>
                     <Button size="small" href={projectLink}>View Project</Button>
                 </CardActions>
             </Card >

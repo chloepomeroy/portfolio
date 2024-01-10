@@ -2,12 +2,13 @@ import React from "react";
 import ExperienceAccordion from "../ExperienceAccordion";
 import { Box, Grid } from "@mui/material";
 import PageTitle from "../Titles";
+import { Element } from "react-scroll";
 
 //import images
 import armyLogo from "../../assets/armyLogo.png"
 import microsoftLogo from "../../assets/microsoftLogo.png"
 
-export default function Experience() {
+export default function Experience({ name }) {
     const [expanded, setExpanded] = React.useState('panel1');
 
     const handleChange = (panel) => (event, newExpanded) => {

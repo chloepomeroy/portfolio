@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -14,31 +14,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import { Link } from "react-router-dom";
 import kaggleIcon from "../assets/kaggle-icon.svg";
 
-const pages = [
-  { page: "Projects", url: "/projects" },
-  { page: "Experience", url: "/experience" },
-  { page: "Certifications", url: "/certifications" },
-  { page: "Education", url: "/education" },
-  { page: "About", url: "/about" },
-];
-
 export default function NavBar() {
   const [activeLink, setActiveLink] = useState("Projects");
   // const [scrolled, setScrolled] = useState(false);
   const [anchorElNav, setAnchorElNav] = useState(null);
-
-  // useEffect(() => {
-  //   const onScroll = () => {
-  //     if (window.scrollY > 50) {
-  //       setScrolled(true);
-  //     } else {
-  //       setScrolled(false);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", onScroll);
-  //   return () => window.removeEventListener("scroll", onScroll);
-  // }, []);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -48,9 +27,17 @@ export default function NavBar() {
     setAnchorElNav(null);
   };
 
-  const handleClickNavButton = (page) => {
-    setActiveLink(page);
+  const handleNavClick = (page) => {
+    setActiveLink(page.page)
   };
+
+  const pages = [
+    { page: "Projects", url: "/#projects" },
+    { page: "Experience", url: "/#experience" },
+    { page: "Certifications", url: "/certifications" },
+    { page: "Education", url: "/education" },
+    { page: "About", url: "/about" },
+  ];
 
   return (
     <AppBar position="sticky">
@@ -104,7 +91,7 @@ export default function NavBar() {
               }}
             >
               {pages.map((page, i) => (
-                <MenuItem key={page.page + i} component={Link} to={page.url} onClick={handleClickNavButton}>
+                <MenuItem key={page.page + i} component={Link} to={page.url} onClick={() => handleNavClick(page.page)}>
                   <Typography textAlign="center">{page.page}</Typography>
                 </MenuItem>
               ))}
@@ -133,11 +120,10 @@ export default function NavBar() {
               <Button
                 key={page.page + i}
                 component={Link}
+                onClick={() => handleNavClick(page)}
                 to={page.url}
                 sx={{ my: 2, color: "white", display: "block" }}
-                className={
-                  activeLink === page ? "active navbar-link" : "navbar-link"
-                }
+                variant={activeLink === page.page ? "contained" : "text"}
               >
                 {page.page}
               </Button>

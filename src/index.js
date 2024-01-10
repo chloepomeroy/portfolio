@@ -5,7 +5,6 @@ import App from './App';
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import { theme } from './Theme.js';
 import { HashRouter } from 'react-router-dom';
-import NavBar from './components/NavBar.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +12,6 @@ root.render(
     <HashRouter>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <NavBar />
         <App />
       </ThemeProvider>
     </HashRouter>
