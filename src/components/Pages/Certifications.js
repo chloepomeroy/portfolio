@@ -19,17 +19,20 @@ export default function Certifications() {
                     <Button variant="outlined" href="https://www.credly.com/users/chloe-pomeroy">See All on Credly</Button>
                 </Grid>
 
-                <Grid container spacing={2} padding={2} >
-                    <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
-                        <img src={azureDataSci} width="400" height="400" />
-                    </Grid>
+                <Grid item xs={10}>
 
-                    <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
-                        <img src={azureDataEng} width="400" height="400" />
-                    </Grid>
+                    <Grid container spacing={2} padding={2} >
+                        <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
+                            <img src={azureDataSci} width="400" height="400" />
+                        </Grid>
 
-                    <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
-                        <img src={comptiaDataPlus} width="400" height="400" />
+                        <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
+                            <img src={azureDataEng} width="400" height="400" />
+                        </Grid>
+
+                        <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
+                            <img src={comptiaDataPlus} width="400" height="400" />
+                        </Grid>
                     </Grid>
                 </Grid>
             </Grid>
