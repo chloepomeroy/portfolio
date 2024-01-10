@@ -32,8 +32,8 @@ export default function NavBar() {
   };
 
   const pages = [
-    { page: "Projects", url: "/#projects" },
-    { page: "Experience", url: "/#experience" },
+    { page: "Projects", url: "/projects" },
+    { page: "Experience", url: "/experience" },
     { page: "Certifications", url: "/certifications" },
     { page: "Education", url: "/education" },
     { page: "About", url: "/about" },

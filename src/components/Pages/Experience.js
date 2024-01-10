@@ -2,7 +2,6 @@ import React from "react";
 import ExperienceAccordion from "../ExperienceAccordion";
 import { Box, Grid } from "@mui/material";
 import PageTitle from "../Titles";
-import { Element } from "react-scroll";
 
 //import images
 import armyLogo from "../../assets/armyLogo.png"
