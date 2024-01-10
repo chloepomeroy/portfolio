@@ -1,10 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.29da65e0.css",
-    "main.js": "/portfolio/static/js/main.c39394b8.js",
+    "main.css": "/portfolio/static/css/main.19438657.css",
+    "main.js": "/portfolio/static/js/main.aabb2b94.js",
+    "static/media/linkedin_photo.png": "/portfolio/static/media/linkedin_photo.5bb5a9ae1eb12829a8e8.png",
+    "static/media/PSDC-Final.pdf": "/portfolio/static/media/PSDC-Final.699a0d3699498da8646a.pdf",
     "static/media/psdc.PNG": "/portfolio/static/media/psdc.dd61e063f88ae9d520c5.PNG",
+    "static/media/cats2.png": "/portfolio/static/media/cats2.74d139302dbddb31f73c.png",
     "static/media/petMatching.PNG": "/portfolio/static/media/petMatching.d8002d9ebe3b0f682600.PNG",
     "static/media/mcmasterLogo.png": "/portfolio/static/media/mcmasterLogo.bb54b355bcc3e54b0069.png",
+    "static/media/cse6242_final_report.pdf": "/portfolio/static/media/cse6242_final_report.dc27f767e5dff5c2d299.pdf",
     "static/media/dataEngCert.png": "/portfolio/static/media/dataEngCert.7cbfb552bfca446607c8.png",
     "static/media/dataScienceCert.png": "/portfolio/static/media/dataScienceCert.184cdd7f2c13476cae7e.png",
     "static/media/armyLogo.png": "/portfolio/static/media/armyLogo.a2b2ba72de0271a761eb.png",
@@ -15,11 +19,11 @@
     "static/media/gatechLogo.png": "/portfolio/static/media/gatechLogo.7805e3c5b8b9ad0b47a2.png",
     "static/media/kaggle-icon.svg": "/portfolio/static/media/kaggle-icon.827f287861646365ef2230061bf2f4a5.svg",
     "index.html": "/portfolio/index.html",
-    "main.29da65e0.css.map": "/portfolio/static/css/main.29da65e0.css.map",
-    "main.c39394b8.js.map": "/portfolio/static/js/main.c39394b8.js.map"
+    "main.19438657.css.map": "/portfolio/static/css/main.19438657.css.map",
+    "main.aabb2b94.js.map": "/portfolio/static/js/main.aabb2b94.js.map"
   },
   "entrypoints": [
-    "static/css/main.29da65e0.css",
-    "static/js/main.c39394b8.js"
+    "static/css/main.19438657.css",
+    "static/js/main.aabb2b94.js"
   ]
 }
