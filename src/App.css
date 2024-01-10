@@ -4,15 +4,15 @@
   font-weight: ;
 } */
 
-.about-link:link {
+.nice-link:link {
   color: #51dce6;
 }
 
-.about-link:visited {
+.nice-link:visited {
   color: #ba8bf9;
 }
 
-.about-link:hover {
+.nice-link:hover {
   color: #1dafb9;
 }
 

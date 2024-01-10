@@ -6,9 +6,9 @@ import portrait from "../../assets/linkedin_photo.png"
 import cats from "../../assets/cats2.png"
 
 export default function About() {
-    var instagram = <Link className="about-link" to="https://www.instagram.com/loslittlebuddies/">Instagram Page</Link>
-    var etsy = <Link className="about-link" to="https://loslittlebuddies.etsy.com">Etsy Store</Link>
-    var youtube = <Link className="about-link" to="https://www.youtube.com/channel/UCBFSoJrW8wPAUmX5i-nQYqw">Youtube</Link>
+    var instagram = <Link className="nice-link" to="https://www.instagram.com/loslittlebuddies/">Instagram Page</Link>
+    var etsy = <Link className="nice-link" to="https://loslittlebuddies.etsy.com">Etsy Store</Link>
+    var youtube = <Link className="nice-link" to="https://www.youtube.com/channel/UCBFSoJrW8wPAUmX5i-nQYqw">Youtube</Link>
 
     return (
         <div id="about">

@@ -2,8 +2,12 @@ import { Grid, Typography, Button, Stack } from "@mui/material";
 import React, { useRef, useEffect } from "react";
 import PageTitle from "../../Titles";
 import psdcPDF from "../../../assets/pdfs/PSDC-Final.pdf"
+import { Link } from "react-router-dom";
+import satImg from "../../../assets/satImg.PNG"
+import predImg from "../../../assets/predImg.PNG"
 
 export default function GhostGearProject() {
+    var Marida = <Link className="nice-link" to="https://github.com/marine-debris/marine-debris.github.io">this</Link>
 
     return (
         <Grid container spacing={2} padding={2} sx={{ justifyContent: "center" }} id="projects">
@@ -17,37 +21,51 @@ export default function GhostGearProject() {
             <Grid container spacing={2} padding={2} style={{ justifyContent: "center", textAlign: "left" }}>
                 <Grid item xs={10}>
                     <Typography color={"#808080"} marginBottom={2}>
-                        The tool was created in collaboration with my team members Nala Sadeeshkumar, Pengcheng (Will) Chen, and Sherjeel Arif. While we collaborated on all aspects of this project and all contributed our insights, my main responsibility was creating the visualization and writing the D3.js code.
+                        The Public Service Data Challenge aims to gather ideas from public servants on how the government can improve its use of data, then build
+                        teams of public servants to address some of these ideas. Each team is tasked with building a detailed pitch  of their idea, and then only
+                        4 ideas  are chosen to advance to the finals for a second presentation. The winning team received funding to advance their idea.
                     </Typography>
                     <Typography marginBottom={2}>
-                        We created a rental helper tool that takes a variety of features and returns
-                        a prediction about fair rental prices for different types of
-                        units, estimated increase or decrease of rental prices per
-                        neighborhood and a summary about the area. The application is
-                        designed to provide renters with information about different neighborhoods in a new city, including predicted
-                        rental prices and proximity to amenities, displayed on a
-                        map. This is different from rental listing sites like Zillow, as the focus is on helping users identify their ideal
-                        areas and neighborhoods based on their needs, which
-                        they can then use on rental listing sites to find the perfect
-                        rental property. The goal is to serve people who are look-
-                        ing to rent without a lot of knowledge about the area.
-
-                        The model carries the risk of inaccurate price forecasts due to the volatility of
-                        the rental market and the inability to curate a diverse
-                        dataset. However, the payoff is significant, as the project
-                        will help individuals and families make informed rental
-                        decisions, save money, and find suitable rentals based on
-                        their geographic needs.
+                        My team worked on the idea to use satellite and sonar data to locate discarded fishing gear at sea. Discarded 'ghost' fishing gear presents a serious
+                        threat to the health of our oceans – harming sea life, damaging delicate environments, and ultimately entering the human food chain. The
+                        Government of Canada is investing in clean-up operations, but these are extremely costly: an AI-assisted platform would help target this work,
+                        much improving its efficiency and effectiveness. Drawing on satellite imagery and sonar data, the tool would create heat maps of
+                        ghost gear densities to help target cleanup efforts to specific areas.
                     </Typography>
-
-                    <Typography>
-                        A couple notes about this project:
-                        <ul>
-                            <li>Due to Georgia Tech's Honour Code and the possibility of future students finding this project, I am not permitted to make the codebase public. If you're interested in seeing it, please contact me and I can share it with you privately (provided you're not enrolled in the Georgia Tech program).</li>
-                            <li>This project was completed in April 2022 and the data comes from February/March 2022. It's likely that the predicted rental prices and neighbourhood demographics don't reflect current values.</li>
-                            <li>To create a project scope, we decided to focus solely on New York City as a proof of concept, but ideally this would exist for all major cities with a large amount of neighbourhoods.</li>
-                        </ul>
+                    <Typography marginBottom={2}>
+                        The team for this project was made up of people in various roles at the Departments of Fisheries and Oceans, Natural Resources Canada,
+                        Employment and Social Development Canada, Environment and Climate Change, and myself at National Defence.
                     </Typography>
+                    <Typography marginBottom={2}>
+                        To build out the use case and construct the pitch,
+                        we explored costing models, identified relevant Goivernment of Canada policies and grant programs, contacted Government of Canada and
+                        nonprofit groups that could make use of the technology (such as Fundy North Fishermen's Association and Petty Harbour Fisherman's Co-Operative),
+                        performed a literature review to identify similar AI models, and created proof of concept models for both Satellite and sonar data.
+                        After the semifinal presentations we were chosen to advance to the finals.
+
+                        As one of the more technical members of the team, I helped with the literature review and built the proof of concept for Satellite data
+                        from {Marida} github project with data from the Marine Debris Archive.
+                    </Typography>
+                </Grid>
+                <Grid item xs={10}>
+                    <Grid container>
+                        <Grid item xs={5}>
+                            <Typography variant="h6" sx={{ textAlign: "left", marginBottom: 2 }}>
+                                Satellite Image Example
+                            </Typography>
+
+                            <img src={satImg}></img>
+                        </Grid>
+                        <Grid item xs={5}>
+                            <Typography variant="h6" sx={{ textAlign: "left" }}>
+                                Annotated Image
+                            </Typography>
+                            <Typography color={"#b0b0b0"} sx={{ textAlign: "left" }}>
+                                Each colour indicates a classification - debris is shown in red
+                            </Typography>
+                            <img src={predImg}></img>
+                        </Grid>
+                    </Grid>
                 </Grid>
                 <Grid item xs={10} style={{ justifyContent: "center" }}>
                     <Stack direction="row" sx={{ justifyContent: "space-between" }}>
