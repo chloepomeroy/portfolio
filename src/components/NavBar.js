@@ -17,6 +17,7 @@ import kaggleIcon from "../assets/kaggle-icon.svg";
 const pages = [
   { page: "Projects", url: "/projects" },
   { page: "Experience", url: "/experience" },
+  { page: "Certifications", url: "/certifications" },
   { page: "Education", url: "/education" },
   { page: "About", url: "/about" },
 ];
