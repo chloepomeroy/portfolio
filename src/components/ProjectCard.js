@@ -14,7 +14,7 @@ export default function ProjectCard(props) {
         <Box sx={{ position: 'relative' }}>
             <Card sx={{
                 width: "50vm",
-                height: "47vh",
+                height: "50vh",
                 backgroundColor: "#353535",
                 display: 'flex',
                 justifyContent: 'space-between',
@@ -44,11 +44,11 @@ export default function ProjectCard(props) {
                     <Stack direction="row" spacing={1} marginBottom={1}>
                         {technologiesUsed.map((tech) => {
                             return (
-                                <Chip label={tech} />
+                                <Chip label={tech} color="secondary" />
                             )
                         })}
                     </Stack>
-                    <Typography variant="body2" color="text.secondary" textAlign="left">
+                    <Typography variant="body2" color="text.secondary" textAlign="left" marginTop={2}>
                         {cardDescription}
                     </Typography>
                 </CardContent>
