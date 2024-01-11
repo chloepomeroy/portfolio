@@ -54,7 +54,7 @@ export default function Projects() {
           lost pets, and made observations whether certain species of pets are more identifiable with this approach."
               technologiesUsed={["Computer Vision", "YOLO", "FisherFaces", "Eigenfaces", "Python"]}
               moreLink="/lostPets"
-              projectLink="https://main--peaceful-queijadas-9871d6.netlify.app/"
+              projectLink=""
               projectType={["Data Science"]} />
           </Grid>
 
@@ -66,21 +66,21 @@ export default function Projects() {
               cardDescription="I'm working on building a binary classification model to identify which Steam games are 'cozy'. The end goal of this project would be to build a model that can predict a 'coziness level' for every Steam game."
               technologiesUsed={["Classification", "Python", "Class Imbalance"]}
               moreLink="/cozyGames"
-              projectLink="https://main--peaceful-queijadas-9871d6.netlify.app/"
+              projectLink=""
               projectType={["Data Science"]} />
           </Grid>
 
-          <Grid item xs={6} md={4} style={{ display: 'flex' }}>
+          {/* <Grid item xs={6} md={4} style={{ display: 'flex' }}>
             <ProjectCard
               image={rentingImage}
-              imageTitle="Book Club App Image"
-              cardTitle="Book Club Management Application"
+              imageTitle="OWL Network"
+              cardTitle="Overwatch League Players Network Diagram"
               cardDescription="An application intended for book clubs to use to keep track of members, previously read books, upcoming meetings, books suggested by club members, and club member voting to determine the next book."
               technologiesUsed={["React", "Javascript"]}
-              moreLink="/bookClub"
+              moreLink="/owlNetwork"
               projectLink="https://main--peaceful-queijadas-9871d6.netlify.app/"
               projectType={["Web Development"]} />
-          </Grid>
+          </Grid> */}
 
         </Grid>
       </Grid>

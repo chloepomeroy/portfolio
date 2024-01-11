@@ -12,6 +12,7 @@ import Experience from "./components/Pages/Experience";
 import Home from "./components/Pages/Home";
 import RentingProject from "./components/Pages/ProjectPages/RentingProject";
 import GhostGearProject from "./components/Pages/ProjectPages/GhostGearProject";
+import LostPetProject from "./components/Pages/ProjectPages/LostPetProject";
 
 function App() {
 
@@ -30,8 +31,8 @@ function App() {
         {/* Project Pages */}
         <Route path="/renting" element={<RentingProject />} />
         <Route path="/ghostGear" element={<GhostGearProject />} />
-        {/* <Route path="/lostPets" element={<LostPetsProject />} />
-        <Route path="/cozyGames" element={<CozyGamesProject />} />
+        <Route path="/lostPets" element={<LostPetProject />} />
+        {/* <Route path="/cozyGames" element={<CozyGamesProject />} />
         <Route path="/bookClub" element={<BookClubProject />} /> */}
       </Routes>
     </div>
