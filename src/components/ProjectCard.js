@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { Badge, Box, Grid, Stack } from '@mui/material';
+import { Chip, Box, Grid, Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 export default function ProjectCard(props) {
@@ -41,6 +41,13 @@ export default function ProjectCard(props) {
                     {cardSubTitle !== "" ? <Typography gutterBottom variant="h7" color="#D3D3D3" component="div" textAlign="left">
                         {cardSubTitle}
                     </Typography> : ""}
+                    <Stack direction="row" spacing={1} marginBottom={1}>
+                        {technologiesUsed.map((tech) => {
+                            return (
+                                <Chip label={tech} />
+                            )
+                        })}
+                    </Stack>
                     <Typography variant="body2" color="text.secondary" textAlign="left">
                         {cardDescription}
                     </Typography>
@@ -48,7 +55,6 @@ export default function ProjectCard(props) {
                 <CardActions>
                     <Button size="small" component={Link} to={moreLink}>Learn More</Button>
                     {projectLink === "" ? "" : <Button size="small" href={projectLink}>View Project</Button>}
-
                 </CardActions>
             </Card >
         </Box >

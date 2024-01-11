@@ -27,7 +27,7 @@ export default function Projects() {
               imageTitle="NYC Renting Helper Image"
               cardTitle="New York City Rental Prediction Tool"
               cardDescription="A tool intended for renters to explore typical rental prices in New York City neighbourhoods based on amenities and features required, to help them decide which neighbourhoods most appeal to their needs."
-              technologiesUsed={["D3.js", "Python", "Regression"]}
+              technologiesUsed={["D3.js", "Python", "Regression", "JavaScript"]}
               moreLink="/renting"
               projectLink="https://main--peaceful-queijadas-9871d6.netlify.app/"
               projectType={["Web Development", "Data Science"]} />
@@ -77,7 +77,7 @@ export default function Projects() {
               imageTitle="Thesis"
               cardTitle="Analyzing Computation Time for Holographic Reconstruction (Undergrad Thesis)"
               cardDescription="The aim of this project was to analyze holographic reconstruction computation to find ways to reduce computation time and get closer to real-time reconstruction."
-              technologiesUsed={["MATLAB", "Research"]}
+              technologiesUsed={["MATLAB", "Literature Review", "Research"]}
               moreLink="/thesis"
               projectLink=""
               projectType={["Physics"]} />
