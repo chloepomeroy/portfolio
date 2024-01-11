@@ -9,6 +9,7 @@ import rentingImage from "../../assets/rentingHelperImage.PNG"
 import psdcImage from "../../assets/psdc.PNG"
 import petMatchingImage from "../../assets/petMatching.PNG"
 import cozySteamImage from "../../assets/steamCozy.PNG"
+import thesisImage from "../../assets/thesisImage.PNG"
 
 export default function Projects() {
 
@@ -18,7 +19,7 @@ export default function Projects() {
         <PageTitle pageTitle="Projects" />
       </Grid>
       <Grid item xs={10}>
-        <Grid container spacing={2} padding={2} >
+        <Grid container spacing={2} padding={2} marginBottom={10}>
 
           <Grid item xs={6} md={4} style={{ display: 'flex' }}>
             <ProjectCard
@@ -62,12 +63,24 @@ export default function Projects() {
             <ProjectCard
               image={cozySteamImage}
               imageTitle="Cozy Steam Games"
-              cardTitle="Cozy Steam Games Binary Class Prediction - in Progress"
+              cardTitle="Classifying Cozy Steam Games using Binary Prediction - in Progress"
               cardDescription="I'm working on building a binary classification model to identify which Steam games are 'cozy'. The end goal of this project would be to build a model that can predict a 'coziness level' for every Steam game."
               technologiesUsed={["Classification", "Python", "Class Imbalance"]}
               moreLink="/cozyGames"
               projectLink=""
               projectType={["Data Science"]} />
+          </Grid>
+
+          <Grid item xs={6} md={4} style={{ display: 'flex' }}>
+            <ProjectCard
+              image={thesisImage}
+              imageTitle="Thesis"
+              cardTitle="Analyzing Computation Time for Holographic Reconstruction (Undergrad Thesis)"
+              cardDescription="The aim of this project was to analyze holographic reconstruction computation to find ways to reduce computation time and get closer to real-time reconstruction."
+              technologiesUsed={["MATLAB", "Research"]}
+              moreLink="/thesis"
+              projectLink=""
+              projectType={["Physics"]} />
           </Grid>
 
           {/* <Grid item xs={6} md={4} style={{ display: 'flex' }}>

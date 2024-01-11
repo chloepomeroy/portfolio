@@ -18,7 +18,7 @@ export default function GhostGearProject() {
                 </Grid>
             </Grid>
 
-            <Grid container spacing={2} padding={2} style={{ justifyContent: "center", textAlign: "left" }}>
+            <Grid container spacing={2} padding={2} style={{ justifyContent: "center", textAlign: "left" }} marginBottom={5}>
                 <Grid item xs={10}>
                     <Typography color={"#808080"} marginBottom={2}>
                         The Public Service Data Challenge aims to gather ideas from public servants on how the government can improve its use of data, then build
@@ -70,7 +70,7 @@ export default function GhostGearProject() {
                 <Grid item xs={10} style={{ justifyContent: "center" }}>
                     <Stack direction="row" sx={{ justifyContent: "space-between" }}>
                         <Typography variant="h4">
-                            Final Presentation
+                            Final Presentation:
                         </Typography>
                         <Button variant="outlined" href="https://canada.governmentdatachallenge.com/shortlist/">
                             Finals Recording

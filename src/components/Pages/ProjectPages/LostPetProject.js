@@ -14,7 +14,7 @@ export default function LostPetProject() {
                 <PageTitle pageTitle="Exploring Facial Recognition in Matching Lost Pets" />
             </Grid>
 
-            <Grid container spacing={2} padding={2} style={{ justifyContent: "center", textAlign: "left" }}>
+            <Grid container spacing={2} padding={2} style={{ justifyContent: "center", textAlign: "left" }} marginBottom={5}>
                 <Grid item xs={10}>
                     <Typography marginBottom={2}>
                         After joining some local community groups on social media, I noticed that a significant
@@ -34,7 +34,7 @@ export default function LostPetProject() {
                         create an accurate model that could help people find their lost pets more easily.
                     </Typography>
                     <Typography>
-                        <Typography variant="h6">
+                        <Typography variant="h6" color={"#b8a3d4"}>
                             Models Tested:
                         </Typography>
                         <ul>
@@ -44,7 +44,7 @@ export default function LostPetProject() {
                         </ul>
                     </Typography>
                     <Typography>
-                        <Typography variant="h6">
+                        <Typography variant="h6" color={"#b8a3d4"}>
                             Data Used:
                         </Typography>
                         <ul>
@@ -54,13 +54,14 @@ export default function LostPetProject() {
                         </ul>
                     </Typography>
                     <Typography>
-                        <Typography variant="h6">
+                        <Typography variant="h6" color={"#b8a3d4"}>
                             Limitations:
                         </Typography>
                         <ul>
                             <li>For Eigenfaces and Fisherfaces, I had to crop the images  by hand, so I couldn't use a big dataset.
                                 To extend this project, I could use a separate model to detect the pet's faces and crop the images</li>
-                            <li>Images taken of strays outdoors may be from a greater distance or poorer angle than my example images</li>
+                            <li>Images taken of strays outdoors may be from a greater distance or poorer angle than my example images,
+                                so this likely needs a lot more work to be useful for my intended use case</li>
                         </ul>
                     </Typography>
                 </Grid>
@@ -84,7 +85,7 @@ export default function LostPetProject() {
                 <Grid item xs={10} style={{ justifyContent: "center" }}>
                     <Stack direction="row" sx={{ justifyContent: "space-between" }}>
                         <Typography variant="h4">
-                            Final Report
+                            Final Report:
                         </Typography>
                     </Stack>
                 </Grid>

@@ -3,6 +3,9 @@ import ReactDOM from "react-dom/client";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+
+//Pages
 import Projects from "./components/Pages/Projects";
 import Contact from "./components/Pages/Contact";
 import Certifications from "./components/Pages/Certifications"
@@ -10,9 +13,13 @@ import About from "./components/Pages/About";
 import Education from "./components/Pages/Education";
 import Experience from "./components/Pages/Experience";
 import Home from "./components/Pages/Home";
+
+//Project Pages
 import RentingProject from "./components/Pages/ProjectPages/RentingProject";
 import GhostGearProject from "./components/Pages/ProjectPages/GhostGearProject";
 import LostPetProject from "./components/Pages/ProjectPages/LostPetProject";
+import CozySteamProject from "./components/Pages/ProjectPages/CozySteamProject";
+import ThesisProject from "./components/Pages/ProjectPages/ThesisPage";
 
 function App() {
 
@@ -32,9 +39,11 @@ function App() {
         <Route path="/renting" element={<RentingProject />} />
         <Route path="/ghostGear" element={<GhostGearProject />} />
         <Route path="/lostPets" element={<LostPetProject />} />
-        {/* <Route path="/cozyGames" element={<CozyGamesProject />} />
-        <Route path="/bookClub" element={<BookClubProject />} /> */}
+        <Route path="/cozyGames" element={<CozySteamProject />} />
+        <Route path="/thesis" element={<ThesisProject />} />
+        {/* <Route path="/bookClub" element={<BookClubProject />} /> */}
       </Routes>
+      <Footer />
     </div>
   );
 }

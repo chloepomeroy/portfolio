@@ -14,7 +14,7 @@ export default function RentingProject() {
                 </Grid>
             </Grid>
 
-            <Grid container spacing={2} padding={2} style={{ justifyContent: "center", textAlign: "left" }}>
+            <Grid container spacing={2} padding={2} style={{ justifyContent: "center", textAlign: "left" }} marginBottom={5}>
                 <Grid item xs={10}>
                     <Typography color={"#808080"} marginBottom={2}>
                         The tool was created in collaboration with my team members Nala Sadeeshkumar, Pengcheng (Will) Chen, and Sherjeel Arif. While we collaborated on all aspects of this project and all contributed our insights, my main responsibility was creating the visualization and writing the D3.js code.
@@ -51,7 +51,7 @@ export default function RentingProject() {
                 </Grid>
                 <Grid item xs={10} style={{ justifyContent: "center" }}>
                     <Typography variant="h4">
-                        Full Project Report
+                        Full Project Report:
                     </Typography>
                 </Grid>
                 <Grid item xs={10} style={{ justifyContent: "center" }}>
