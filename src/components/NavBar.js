@@ -152,13 +152,14 @@ export default function NavBar() {
             >
               <img src={kaggleIcon} alt="Kaggle icon" style={{ height: "1em" }} />
             </IconButton>
+            {/* Just linking to linkedin for now */}
             <Button
               component={Link}
-              to="/contact"
+              to="https://www.linkedin.com/in/chloepomeroy/"
               variant="contained"
               sx={{ marginLeft: { xs: 0, md: 3 } }}
             >
-              Contact
+              Connect
             </Button>
           </Box>
         </Toolbar>
