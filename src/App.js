@@ -20,6 +20,10 @@ import GhostGearProject from "./components/Pages/ProjectPages/GhostGearProject";
 import LostPetProject from "./components/Pages/ProjectPages/LostPetProject";
 import CozySteamProject from "./components/Pages/ProjectPages/CozySteamProject";
 import ThesisProject from "./components/Pages/ProjectPages/ThesisPage";
+// import WrmthProject from "./components/Pages/ProjectPages/WrmthProject";
+// import WargamingProject from "./components/Pages/ProjectPages/WargamingProject";
+import AudioTProject from "./components/Pages/ProjectPages/AudioTProject"
+import FinetuningProject from "./components/Pages/ProjectPages/LLMFinetuningProject";
 
 function App() {
 
@@ -41,6 +45,10 @@ function App() {
         <Route path="/lostPets" element={<LostPetProject />} />
         <Route path="/cozyGames" element={<CozySteamProject />} />
         <Route path="/thesis" element={<ThesisProject />} />
+        {/* <Route path="/lss-wrmth" element={<WrmthProject />} />
+        <Route path="/nato-wargaming" element={<WargamingProject />} /> */}
+        <Route path="/audiot-hmm" element={<AudioTProject />} />
+        <Route path="llm-finetuning" element={<FinetuningProject />} />
         {/* <Route path="/bookClub" element={<BookClubProject />} /> */}
       </Routes>
       <Footer />

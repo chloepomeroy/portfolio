@@ -8,8 +8,11 @@ import { Element } from 'react-scroll';
 import rentingImage from "../../assets/rentingHelperImage.PNG"
 import psdcImage from "../../assets/psdc.PNG"
 import petMatchingImage from "../../assets/petMatching.PNG"
-import cozySteamImage from "../../assets/steamCozy.PNG"
+// import cozySteamImage from "../../assets/steamCozy.PNG"
 import thesisImage from "../../assets/thesisImage.PNG"
+import wrmthImage from "../../assets/wrmth.png"
+import audiotImage from "../../assets/audiot.png"
+import finetuningImage from "../../assets/finetuning.png"
 
 export default function Projects() {
 
@@ -20,12 +23,51 @@ export default function Projects() {
       </Grid>
       <Grid item xs={10}>
         <Grid container spacing={2} padding={2} marginBottom={10}>
+          <Grid item xs={6} md={4} style={{ display: 'flex' }}>
+            <ProjectCard
+              image={audiotImage}
+              imageTitle="AudioT"
+              cardTitle="Using Audio Data to Monitor Animal Health in Poultry Farming"
+              cardSubTitle="In Partnership with audiot.ai"
+              cardDescription="Experimenting with various modelling and feature engineering approaches to identify markov states and classify time periods based on a large volume of audio files recorded in industrial chicken coops."
+              technologiesUsed={["Hidden Markov Models", "Research", "Audio Processing"]}
+              moreLink="/audiot-hmm"
+              projectLink=""
+              projectType={["Data Science"]} />
+          </Grid>
+
+          {/* <Grid item xs={6} md={4} style={{ display: 'flex' }}>
+            <ProjectCard
+              image={thesisImage}
+              imageTitle="Wargaming"
+              cardTitle="Developing an LLM-powered Wargaming Application"
+              cardSubTitle="3rd Place NATO Hackathon 2024"
+              cardDescription="A proof of concept wargaming application that leverages Langchain and GPT-4 to aid in the development and adjudication of wargaming simulations. Created as part of the 2024 NATO Hackathon in Amsterdam."
+              technologiesUsed={["Javascript", "Langchain", "GPT-4", "LLMs"]}
+              moreLink="/nato-wargaming"
+              projectLink=""
+              projectType={["Web Development", "Data Science"]} />
+          </Grid> */}
+
+          <Grid item xs={6} md={4} style={{ display: 'flex' }}>
+            <ProjectCard
+              image={finetuningImage}
+              imageTitle="LLM Finetuning"
+              cardTitle="A Survey and Comparison of LLM Fine Tuning Methods"
+              cardSubTitle=""
+              cardDescription="We investigate the effectiveness of a series of approaches including vanilla fine tuning, prompt-based fine tuning, in-context learning, and context distillation, and compare these using the GLUE RTE benchmark."
+              technologiesUsed={["LLMs", "Research", "Literature Review"]}
+              moreLink="/llm-finetuning"
+              projectLink=""
+              projectType={["Data Science"]} />
+          </Grid>
 
           <Grid item xs={6} md={4} style={{ display: 'flex' }}>
             <ProjectCard
               image={rentingImage}
               imageTitle="NYC Renting Helper Image"
-              cardTitle="New York City Rental Prediction Tool"
+              cardTitle="New York City Rental Prediction Model and Tool"
+              cardSubTitle=""
               cardDescription="A tool intended for renters to explore typical rental prices in New York City neighbourhoods based on amenities and features required, to help them decide which neighbourhoods most appeal to their needs."
               technologiesUsed={["D3.js", "Python", "Regression", "JavaScript"]}
               moreLink="/renting"
@@ -51,15 +93,16 @@ export default function Projects() {
               image={petMatchingImage}
               imageTitle="Matching Lost Pets"
               cardTitle="Exploring Facial Recognition in Matching Lost Pets"
-              cardDescription="To address the problem of matching lost pet owners to found strays, I investigated the efficacy of different image recognition models in matching
-          lost pets, and made observations whether certain species of pets are more identifiable with this approach."
-              technologiesUsed={["Computer Vision", "YOLO", "FisherFaces", "Eigenfaces", "Python"]}
+              cardSubTitle=""
+              cardDescription="To address the problem of matching lost pet owners to found strays, I investigated the efficacy of facial recognition models in matching
+          pets, and made observations whether certain species are more identifiable with this approach."
+              technologiesUsed={["Computer Vision", "YOLO", "Eigenfaces", "Python"]}
               moreLink="/lostPets"
               projectLink=""
               projectType={["Data Science"]} />
           </Grid>
 
-          <Grid item xs={6} md={4} style={{ display: 'flex' }}>
+          {/* <Grid item xs={6} md={4} style={{ display: 'flex' }}>
             <ProjectCard
               image={cozySteamImage}
               imageTitle="Cozy Steam Games"
@@ -69,14 +112,15 @@ export default function Projects() {
               moreLink="/cozyGames"
               projectLink=""
               projectType={["Data Science"]} />
-          </Grid>
+          </Grid> */}
 
           <Grid item xs={6} md={4} style={{ display: 'flex' }}>
             <ProjectCard
               image={thesisImage}
               imageTitle="Thesis"
-              cardTitle="Analyzing Computation Time for Holographic Reconstruction (Undergrad Thesis)"
-              cardDescription="The aim of this project was to analyze holographic reconstruction computation to find ways to reduce computation time and get closer to real-time reconstruction."
+              cardTitle="Analyzing Computation Time for Holographic Reconstruction"
+              cardSubTitle="Undergrad Thesis"
+              cardDescription="The aim of this project was to analyze holographic reconstruction computation to find ways to reduce computation time and approach real-time reconstruction, with the goal to use this for urinalysis and studying algae blooms."
               technologiesUsed={["MATLAB", "Literature Review", "Research"]}
               moreLink="/thesis"
               projectLink=""

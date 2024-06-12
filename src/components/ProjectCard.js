@@ -13,8 +13,8 @@ export default function ProjectCard(props) {
     return (
         <Box sx={{ position: 'relative' }}>
             <Card sx={{
-                width: "50vm",
-                height: "50vh",
+                width: "52vh",
+                height: "61vh",
                 backgroundColor: "#353535",
                 display: 'flex',
                 justifyContent: 'space-between',
@@ -31,26 +31,44 @@ export default function ProjectCard(props) {
                         <Badge key={i} right={i + 10 + i * 10} sx={{ position: 'absolute', bottom: 10 }} badgeContent={type} color="primary" />)
                 })} */}
                 <CardContent>
-                    {/* {technologiesUsed.map((tech, i) => {
-                        return (
-                            <Badge key={i} badgeContent={tech} />)
-                    })} */}
-                    <Typography gutterBottom variant="h5" component="div">
-                        {cardTitle}
-                    </Typography>
-                    {cardSubTitle !== "" ? <Typography gutterBottom variant="h7" color="#D3D3D3" component="div" textAlign="left">
-                        {cardSubTitle}
-                    </Typography> : ""}
-                    <Stack direction="row" spacing={1} marginBottom={1}>
-                        {technologiesUsed.map((tech) => {
-                            return (
-                                <Chip label={tech} color="secondary" />
-                            )
-                        })}
-                    </Stack>
-                    <Typography variant="body2" color="text.secondary" textAlign="left" marginTop={2}>
-                        {cardDescription}
-                    </Typography>
+                    <Grid container height={"25vh"}>
+                        {cardSubTitle !== "" ?
+                            <>
+                                <Grid container height={"12vh"} marginBottom={"5px"}>
+                                    <Grid item>
+                                        <Typography gutterBottom variant="h5" component="div" textAlign="left">
+                                            {cardTitle}
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item>
+                                        {cardSubTitle !== "" ? <Typography gutterBottom variant="h7" color="#D3D3D3" component="div" textAlign="left">
+                                            {cardSubTitle}
+                                        </Typography> : ""}
+                                    </Grid>
+                                </Grid>
+                            </> :
+                            <>
+                                <Grid container height={"12vh"} marginBottom={"5px"} alignItems={"center"}>
+                                    <Grid item>
+                                        <Typography gutterBottom variant="h5" component="div" textAlign="left">
+                                            {cardTitle}
+                                        </Typography>
+                                    </Grid>
+                                </Grid>
+                            </>}
+                        <Grid container spacing={1}>
+                            {technologiesUsed.map((tech) => {
+                                return (
+                                    <Grid item>
+                                        <Chip label={tech} color="secondary" />
+                                    </Grid>
+                                )
+                            })}
+                        </Grid>
+                        <Typography variant="body2" color="text.secondary" textAlign="left" marginTop={2}>
+                            {cardDescription}
+                        </Typography>
+                    </Grid>
                 </CardContent>
                 <CardActions>
                     <Button size="small" component={Link} to={moreLink}>Learn More</Button>
