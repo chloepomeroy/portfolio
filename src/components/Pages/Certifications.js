@@ -5,7 +5,8 @@ import { Grid, Button } from "@mui/material";
 //import images
 import azureDataSci from "../../assets/dataScienceCert.png"
 import azureDataEng from "../../assets/dataEngCert.png"
-import comptiaDataPlus from "../../assets/dataPlusCert.png"
+// import comptiaDataPlus from "../../assets/dataPlusCert.png"
+import comptiaDataX from "../../assets/DataX.png"
 
 export default function Certifications() {
 
@@ -23,15 +24,15 @@ export default function Certifications() {
 
                     <Grid container spacing={2} padding={2} >
                         <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
-                            <img src={azureDataSci} width="400" height="400" />
+                            <img src={azureDataSci} width="400" height="400" alt="Badge for the Azure Data Scienctist associate certification" />
                         </Grid>
 
                         <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
-                            <img src={azureDataEng} width="400" height="400" />
+                            <img src={azureDataEng} width="400" height="400" alt="Badge for the Azure Data Engineer associate certification" />
                         </Grid>
 
                         <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
-                            <img src={comptiaDataPlus} width="400" height="400" />
+                            <img src={comptiaDataX} width="400" height="400" alt="Badge for the Comptia DataX certification" />
                         </Grid>
                     </Grid>
                 </Grid>

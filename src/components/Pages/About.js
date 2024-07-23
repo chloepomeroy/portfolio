@@ -19,11 +19,11 @@ export default function About() {
                 </Grid>
                 <Grid item xs={1}></Grid>
 
-                <Grid item xs={3} md={2} sx={{ justifyContent: "left" }}>
-                    <img src={portrait} width="300" height="auto" sx={{ justifyContent: "left" }} />
+                <Grid item xs={3} md={2} sx={{ justifyContent: "space-between" }}>
+                    <img src={portrait} width="250" height="auto" sx={{ justifyContent: "left" }} alt="A portrait of me smiling, with leaves in the background" />
                 </Grid>
 
-                <Grid item xs={6} sx={{ justifyContent: "left", textAlign: "left" }}>
+                <Grid item xs={6} sx={{ justifyContent: "center", textAlign: "left" }}>
 
                     <Typography marginBottom={1}>
                         Hi! I'm Chloe and I live in Ottawa, Ontario, Canada with my partner and our 2 cats, Little Rascal and Cappuccino.
@@ -52,7 +52,7 @@ export default function About() {
                     </Typography>
                 </Grid>
                 <Grid item xs={3} md={2}>
-                    <img src={cats} width="400" height="auto" sx={{ justifyContent: "left" }} />
+                    <img src={cats} width="400" height="auto" sx={{ justifyContent: "left" }} alt="Two cats laying on a couch, Cappuccino is a black and white long-hair and Little Rascal is a white shorthair with small grey patches on his face and tail." />
                 </Grid>
             </Grid >
         </div>

@@ -2,16 +2,14 @@ import * as React from 'react';
 import { Grid } from '@mui/material';
 import ProjectCard from '../ProjectCard';
 import PageTitle from '../Titles';
-import { Element } from 'react-scroll';
 
 //Image imports
 import rentingImage from "../../assets/rentingHelperImage.PNG"
 import psdcImage from "../../assets/psdc.PNG"
 import petMatchingImage from "../../assets/petMatching.PNG"
-// import cozySteamImage from "../../assets/steamCozy.PNG"
 import thesisImage from "../../assets/thesisImage.PNG"
-import wrmthImage from "../../assets/wrmth.png"
-import audiotImage from "../../assets/audiot.png"
+// import wrmthImage from "../../assets/wrmth.png"
+import audiotImage from "../../assets/audiot.PNG"
 import finetuningImage from "../../assets/finetuning.png"
 
 export default function Projects() {
@@ -27,10 +25,10 @@ export default function Projects() {
             <ProjectCard
               image={audiotImage}
               imageTitle="AudioT"
-              cardTitle="Using Audio Data to Monitor Animal Health in Poultry Farming"
+              cardTitle="Using Audio Data to Monitor Bird Health in Poultry Farming"
               cardSubTitle="In Partnership with audiot.ai"
-              cardDescription="Experimenting with various modelling and feature engineering approaches to identify markov states and classify time periods based on a large volume of audio files recorded in industrial chicken coops."
-              technologiesUsed={["Hidden Markov Models", "Research", "Audio Processing"]}
+              cardDescription="Experimenting with various modelling and feature engineering approaches to identify states and classify time periods based on a large volume of audio files recorded in industrial chicken coops."
+              technologiesUsed={["HMMs", "Research", "Audio Processing", "Classification"]}
               moreLink="/audiot-hmm"
               projectLink=""
               projectType={["Data Science"]} />
@@ -102,18 +100,6 @@ export default function Projects() {
               projectType={["Data Science"]} />
           </Grid>
 
-          {/* <Grid item xs={6} md={4} style={{ display: 'flex' }}>
-            <ProjectCard
-              image={cozySteamImage}
-              imageTitle="Cozy Steam Games"
-              cardTitle="Classifying Cozy Steam Games using Binary Prediction - in Progress"
-              cardDescription="I'm working on building a binary classification model to identify which Steam games are 'cozy'. The end goal of this project would be to build a model that can predict a 'coziness level' for every Steam game."
-              technologiesUsed={["Classification", "Python", "Class Imbalance"]}
-              moreLink="/cozyGames"
-              projectLink=""
-              projectType={["Data Science"]} />
-          </Grid> */}
-
           <Grid item xs={6} md={4} style={{ display: 'flex' }}>
             <ProjectCard
               image={thesisImage}
@@ -126,18 +112,6 @@ export default function Projects() {
               projectLink=""
               projectType={["Physics"]} />
           </Grid>
-
-          {/* <Grid item xs={6} md={4} style={{ display: 'flex' }}>
-            <ProjectCard
-              image={rentingImage}
-              imageTitle="OWL Network"
-              cardTitle="Overwatch League Players Network Diagram"
-              cardDescription="An application intended for book clubs to use to keep track of members, previously read books, upcoming meetings, books suggested by club members, and club member voting to determine the next book."
-              technologiesUsed={["React", "Javascript"]}
-              moreLink="/owlNetwork"
-              projectLink="https://main--peaceful-queijadas-9871d6.netlify.app/"
-              projectType={["Web Development"]} />
-          </Grid> */}
 
         </Grid>
       </Grid>

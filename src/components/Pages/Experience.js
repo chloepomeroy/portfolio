@@ -23,24 +23,12 @@ export default function Experience({ name }) {
 
                 <Grid item xs={10} style={{ justifyContent: "center" }}>
                     <ExperienceAccordion
-                        company={"Microsoft (Contracted through ManpowerGroup)"}
-                        jobTitle={"Support Engineer - Azure Databricks"}
-                        dates={"09/2023  - Present"}
-                        logo={microsoftLogo}
-                        jobDuties={["Communicating with Microsoft’s business clients to identify and rectify problems related to Apache Spark and Databricks", "Creating reproductions of customer errors in my own Databricks environment", "Doing research and troubleshooting to solve client issues", "Connecting with other internal support teams such as Storage, Power BI, and Entra ID to collaborate on cases"]}
-                        skills={["Azure Databricks", "Spark", "Azure Cloud Infrastructure", "Client Communication", "Research", "Troubleshooting"]}
-                        handleChange={handleChange}
-                        expanded={expanded}
-                        panel="panel-1"
-                    />
-                </Grid>
-
-                <Grid item xs={10} style={{ justifyContent: "center" }}>
-                    <ExperienceAccordion
                         company={"Department of National Defence - Canadian Army"}
                         jobTitle={"Full Stack Web Developer - Team Lead"}
-                        dates={"07/2022  - 09/2023"}
+                        dates={"07/2022 - Present"}
+                        extra={"Part time from 09/2023 - 06/2024"}
                         logo={armyLogo}
+                        logoalt={"The logo for the Canadian Army"}
                         jobDuties={["Taking a leadership role in a development team while abiding by Agile methodologies",
                             "Developing web applications using Mongo, ReactJS, and NodeJS with effective UI/UX as a priority",
                             "Reviewing pull requests and resolving merge conflicts, using Git for version control.",
@@ -54,10 +42,26 @@ export default function Experience({ name }) {
 
                 <Grid item xs={10} style={{ justifyContent: "center" }}>
                     <ExperienceAccordion
+                        company={"Microsoft (Contracted through ManpowerGroup)"}
+                        jobTitle={"Support Engineer - Azure Databricks"}
+                        dates={"09/2023 - 06/2024"}
+                        logo={microsoftLogo}
+                        logoalt={"The logo for Microsoft"}
+                        jobDuties={["Communicating with Microsoft’s business clients to identify and rectify problems related to Apache Spark and Databricks", "Creating reproductions of customer errors in my own Databricks environment", "Doing research and troubleshooting to solve client issues", "Connecting with other internal support teams such as Storage, Power BI, and Entra ID to collaborate on cases"]}
+                        skills={["Azure Databricks", "Spark", "Azure Cloud Infrastructure", "Client Communication", "Research", "Troubleshooting"]}
+                        handleChange={handleChange}
+                        expanded={expanded}
+                        panel="panel-1"
+                    />
+                </Grid>
+
+                <Grid item xs={10} style={{ justifyContent: "center" }}>
+                    <ExperienceAccordion
                         company={"Department of National Defence - Canadian Army"}
                         jobTitle={"Data Analyst/Engineer"}
                         dates={"05/2021 - 07/2022"}
                         logo={armyLogo}
+                        logoalt={"The logo for the Canadian Army"}
                         jobDuties={["Developing end to end data solutions using the Azure infrastructure (Data Factory, Synapse Analytics, SQL DB).",
                             "Cleaning and modeling data to prepare for analysis and visualization.",
                             "Creating dashboards in Power BI to communicate key insights from army data to non-technical users.",

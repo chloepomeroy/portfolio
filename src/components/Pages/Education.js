@@ -29,9 +29,12 @@ export default function Education() {
                             degree={"Master of Science (expected by 09/2024)"}
                             program={"Analytics (Computational Track)"}
                             logo={gatechLogo}
+                            logoalt={"The logo for Georgia Institute of Technology"}
                             schoolAndYear={"Georgia Tech, 2022-2024"}
                             description={"This is an interdisciplinary data science and analytics degree program that leverages three different colleges at Georgia Tech: Computing, Engineering, and Business. The program focuses on machine learning/AI, statistical modeling and learning, data storage and pipelining, data visualization, optimization and simulation, and business analytics/applications."}
                             selectedCoursework={["Deep Learning", "Machine Learning", "Network Science", "Optimization"]}
+                            projectTitle={"Practicum Project"}
+                            projectLink={"/audiot-hmm"}
                             handleChange={handleChange}
                             expanded={expanded}
                             panel="panel-1"
@@ -44,6 +47,7 @@ export default function Education() {
                             degree={"Graduate Certificate"}
                             program={"Business Intelligence Systems Infrastructure"}
                             logo={algonquinLogo}
+                            logoalt={"The logo for Algonquin College"}
                             schoolAndYear={"Algonquin College, 2020-2021"}
                             description={"This program provides specialized knowledge and skills to support the corporate use of Business Intelligence, Data Visualization, Data Science, Cloud Services, and Agile Project Management. The focus is  on learning how to collect, analyze, design, build, integrate and manage systems in order to facilitate data-driven decision-making."}
                             selectedCoursework={["Data Visualization", "Data Modeling", "Cloud Data Architecture", "Database Administration"]}
@@ -59,9 +63,12 @@ export default function Education() {
                             degree={"Bachelor of Science"}
                             program={"Honours Mathematics and Physics"}
                             logo={mcmasterLogo}
+                            logoalt={"The crest for McMaster University"}
                             schoolAndYear={"McMaster University, 2016-2020"}
                             description={"This is a Physics specialization that focuses more  heavily on mathematics and theoretical topics."}
                             selectedCoursework={["Scientific Computing", "Linear Algebra", "Multivariable Calculus", "Probability and Statistics"]}
+                            projectTitle={"Undergraduate Thesis"}
+                            projectLink={"/thesis"}
                             handleChange={handleChange}
                             expanded={expanded}
                             panel="panel-3"

@@ -4,14 +4,15 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import { Stack, Typography, Button } from "@mui/material";
+import { Link } from 'react-router-dom';
 
 export default function EducationAccordion(props) {
-    const { programLink, degree, program, logo, schoolAndYear, description, selectedCoursework, handleChange, expanded, panel } = props
+    const { programLink, degree, program, logo, logoalt, schoolAndYear, description, selectedCoursework, projectTitle, projectLink, handleChange, expanded, panel } = props
     return (
         <MuiAccordion square expanded={expanded === panel} onChange={handleChange(panel)} sx={{ backgroundColor: "#353535" }}>
             <MuiAccordionSummary expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem', transform: 'rotate(90deg)' }} />} aria-controls="panel1d-content" id="panel1d-header">
                 <Stack direction="row" spacing={1}>
-                    <img src={logo} width="30" height="30" />
+                    <img src={logo} width="30" height="30" alt={logoalt} />
                     <Typography variant="h5">{degree}</Typography>
                     <Typography variant="h6" color={"#808080"}>{" " + program}</Typography>
                 </Stack>
@@ -40,6 +41,15 @@ export default function EducationAccordion(props) {
                             })}
                         </ul>
                     </Typography>
+                    <Stack direction="row" justifyContent="space-between">
+                        {projectTitle ? <Button
+                            component={Link} to={projectLink}
+                            variant="contained"
+                            sx={{ marginLeft: { xs: 0, md: 3 } }}
+                        >
+                            {projectTitle}
+                        </Button> : null}
+                    </Stack>
                 </Stack>
             </MuiAccordionDetails>
         </MuiAccordion>)
