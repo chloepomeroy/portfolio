@@ -26,7 +26,7 @@ export default function Education() {
                     <Grid item xs={10} style={{ justifyContent: "center" }}>
                         <EducationAccordion
                             programLink={"https://pe.gatech.edu/degrees/analytics"}
-                            degree={"Master of Science (expected by 09/2024)"}
+                            degree={"Master of Science"}
                             program={"Analytics (Computational Track)"}
                             logo={gatechLogo}
                             logoalt={"The logo for Georgia Institute of Technology"}

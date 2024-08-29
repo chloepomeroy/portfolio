@@ -6,6 +6,7 @@ import PageTitle from "../Titles";
 //import images
 import armyLogo from "../../assets/armyLogo.png"
 import microsoftLogo from "../../assets/microsoftLogo.png"
+import DNDLogo from "../../assets/CanadaFlagLogo.png"
 
 export default function Experience({ name }) {
     const [expanded, setExpanded] = React.useState('panel1');
@@ -19,6 +20,21 @@ export default function Experience({ name }) {
             <Grid container spacing={2} padding={2} sx={{ justifyContent: "center" }}>
                 <Grid item xs={10} style={{ textAlign: "left" }}>
                     <PageTitle pageTitle="Experience" />
+                </Grid>
+
+                <Grid item xs={10} style={{ justifyContent: "center" }}>
+                    <ExperienceAccordion
+                        company={"Department of National Defence - Digital Transformation Office"}
+                        jobTitle={"Digital Solutions Team Lead"}
+                        dates={"08/2024 - Present"}
+                        logo={DNDLogo}
+                        logoalt={"The Canadian flag"}
+                        jobDuties={[]}
+                        skills={["Power BI", "Fabric", "Troubleshooting", "Python", "SQL", "Spark"]}
+                        handleChange={handleChange}
+                        expanded={expanded}
+                        panel="panel-2"
+                    />
                 </Grid>
 
                 <Grid item xs={10} style={{ justifyContent: "center" }}>
