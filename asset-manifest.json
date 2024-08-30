@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.5c52885d.css",
-    "main.js": "/portfolio/static/js/main.cc6f527b.js",
+    "main.js": "/portfolio/static/js/main.f9765f89.js",
     "static/media/lostPet.pdf": "/portfolio/static/media/lostPet.1108aa927e6caab26751.pdf",
     "static/media/linkedin_photo.png": "/portfolio/static/media/linkedin_photo.5bb5a9ae1eb12829a8e8.png",
     "static/media/PSDC-Final.pdf": "/portfolio/static/media/PSDC-Final.699a0d3699498da8646a.pdf",
@@ -27,14 +27,15 @@
     "static/media/finetuning.png": "/portfolio/static/media/finetuning.d0dfce94e479a501a52d.png",
     "static/media/DataX.png": "/portfolio/static/media/DataX.fa2c23ecc4f480308cd5.png",
     "static/media/petResults.PNG": "/portfolio/static/media/petResults.eae13875fc31b62c6d12.PNG",
+    "static/media/CanadaFlagLogo.png": "/portfolio/static/media/CanadaFlagLogo.b4c50ce48f0e68a81c3d.png",
     "static/media/predImg.PNG": "/portfolio/static/media/predImg.1da076f23d4ce870d957.PNG",
     "static/media/kaggle-icon.svg": "/portfolio/static/media/kaggle-icon.827f287861646365ef2230061bf2f4a5.svg",
     "index.html": "/portfolio/index.html",
     "main.5c52885d.css.map": "/portfolio/static/css/main.5c52885d.css.map",
-    "main.cc6f527b.js.map": "/portfolio/static/js/main.cc6f527b.js.map"
+    "main.f9765f89.js.map": "/portfolio/static/js/main.f9765f89.js.map"
   },
   "entrypoints": [
     "static/css/main.5c52885d.css",
-    "static/js/main.cc6f527b.js"
+    "static/js/main.f9765f89.js"
   ]
 }
