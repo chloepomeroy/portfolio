@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.5c52885d.css",
-    "main.js": "/portfolio/static/js/main.f9765f89.js",
+    "main.js": "/portfolio/static/js/main.8bfc5a61.js",
+    "static/media/MapleReady.mp4": "/portfolio/static/media/MapleReady.3f5368a6bb0c90119a68.mp4",
     "static/media/lostPet.pdf": "/portfolio/static/media/lostPet.1108aa927e6caab26751.pdf",
     "static/media/linkedin_photo.png": "/portfolio/static/media/linkedin_photo.5bb5a9ae1eb12829a8e8.png",
     "static/media/PSDC-Final.pdf": "/portfolio/static/media/PSDC-Final.699a0d3699498da8646a.pdf",
@@ -12,7 +13,7 @@
     "static/media/petMatching.PNG": "/portfolio/static/media/petMatching.d8002d9ebe3b0f682600.PNG",
     "static/media/mcmasterLogo.png": "/portfolio/static/media/mcmasterLogo.bb54b355bcc3e54b0069.png",
     "static/media/cse6242_final_report.pdf": "/portfolio/static/media/cse6242_final_report.dc27f767e5dff5c2d299.pdf",
-    "static/media/audiot.PNG": "/portfolio/static/media/audiot.9237de2aacdaef699854.PNG",
+    "static/media/audiot.png": "/portfolio/static/media/audiot.9237de2aacdaef699854.png",
     "static/media/petYolo.PNG": "/portfolio/static/media/petYolo.44c991e6e4c109df0de1.PNG",
     "static/media/dataEngCert.png": "/portfolio/static/media/dataEngCert.7cbfb552bfca446607c8.png",
     "static/media/dataScienceCert.png": "/portfolio/static/media/dataScienceCert.184cdd7f2c13476cae7e.png",
@@ -26,16 +27,17 @@
     "static/media/gatechLogo.png": "/portfolio/static/media/gatechLogo.7805e3c5b8b9ad0b47a2.png",
     "static/media/finetuning.png": "/portfolio/static/media/finetuning.d0dfce94e479a501a52d.png",
     "static/media/DataX.png": "/portfolio/static/media/DataX.fa2c23ecc4f480308cd5.png",
+    "static/media/MapleReady.jpg": "/portfolio/static/media/MapleReady.5abba3e9b757a1b9df23.jpg",
     "static/media/petResults.PNG": "/portfolio/static/media/petResults.eae13875fc31b62c6d12.PNG",
     "static/media/CanadaFlagLogo.png": "/portfolio/static/media/CanadaFlagLogo.b4c50ce48f0e68a81c3d.png",
     "static/media/predImg.PNG": "/portfolio/static/media/predImg.1da076f23d4ce870d957.PNG",
     "static/media/kaggle-icon.svg": "/portfolio/static/media/kaggle-icon.827f287861646365ef2230061bf2f4a5.svg",
     "index.html": "/portfolio/index.html",
     "main.5c52885d.css.map": "/portfolio/static/css/main.5c52885d.css.map",
-    "main.f9765f89.js.map": "/portfolio/static/js/main.f9765f89.js.map"
+    "main.8bfc5a61.js.map": "/portfolio/static/js/main.8bfc5a61.js.map"
   },
   "entrypoints": [
     "static/css/main.5c52885d.css",
-    "static/js/main.f9765f89.js"
+    "static/js/main.8bfc5a61.js"
   ]
 }
