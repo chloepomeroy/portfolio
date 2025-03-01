@@ -42,12 +42,13 @@ export default function RentingProject() {
 
                     <Typography>
                         A couple notes about this project:
+                    </Typography>
                         <ul>
                             <li>Due to Georgia Tech's Honour Code and the possibility of future students finding this project, I am not permitted to make the codebase public. If you're interested in seeing it, please contact me and I can share it with you privately (provided you're not enrolled in the Georgia Tech program).</li>
                             <li>This project was completed in April 2022 and the data comes from February/March 2022. It's likely that the predicted rental prices and neighbourhood demographics don't reflect current values.</li>
                             <li>To create a project scope, we decided to focus solely on New York City as a proof of concept, but ideally this would exist for all major cities with a large amount of neighbourhoods.</li>
                         </ul>
-                    </Typography>
+
                 </Grid>
                 <Grid item xs={10} style={{ justifyContent: "center" }}>
                     <Typography variant="h4">

@@ -33,7 +33,6 @@ export default function LostPetProject() {
                         facial recognition models for this purpose. By testing different facial recognition methods, I hope to
                         create an accurate model that could help people find their lost pets more easily.
                     </Typography>
-                    <Typography>
                         <Typography variant="h6" color={"#b8a3d4"}>
                             Models Tested:
                         </Typography>
@@ -42,8 +41,6 @@ export default function LostPetProject() {
                             <li>Eigenfaces</li>
                             <li>Fisherfaces</li>
                         </ul>
-                    </Typography>
-                    <Typography>
                         <Typography variant="h6" color={"#b8a3d4"}>
                             Data Used:
                         </Typography>
@@ -52,8 +49,6 @@ export default function LostPetProject() {
                             <li>Images of my own cats, which aren't purebred</li>
                             <li>Images from local animal shelters, which are likely also not purebred</li>
                         </ul>
-                    </Typography>
-                    <Typography>
                         <Typography variant="h6" color={"#b8a3d4"}>
                             Limitations:
                         </Typography>
@@ -63,7 +58,6 @@ export default function LostPetProject() {
                             <li>Images taken of strays outdoors may be from a greater distance or poorer angle than my example images,
                                 so this likely needs a lot more work to be useful for my intended use case</li>
                         </ul>
-                    </Typography>
                 </Grid>
                 <Grid item xs={10}>
                     <Grid container>
