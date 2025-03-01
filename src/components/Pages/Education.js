@@ -17,7 +17,7 @@ export default function Education() {
 
     return (
         <div id="education" >
-            <Box sx={{ width: "100%", justifyContent: "center" }}>
+            <Box sx={{ width: "100%", justifyContent: "center", flexGrow: 1, mb: 8 }}>
                 <Grid container spacing={2} padding={2} sx={{ justifyContent: "center" }}>
                     <Grid item xs={10} style={{ textAlign: "left" }}>
                         <PageTitle pageTitle="Education" />

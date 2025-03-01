@@ -16,7 +16,7 @@ export default function Experience({ name }) {
     };
 
     return (
-        <Box sx={{ width: "100%", justifyContent: "center" }}>
+        <Box sx={{ width: "100%", justifyContent: "center", marginBottom: "10px", flexGrow: 1, mb: 8 }}>
             <Grid container spacing={2} padding={2} sx={{ justifyContent: "center" }}>
                 <Grid item xs={10} style={{ textAlign: "left" }}>
                     <PageTitle pageTitle="Experience" />
@@ -24,16 +24,38 @@ export default function Experience({ name }) {
 
                 <Grid item xs={10} style={{ justifyContent: "center" }}>
                     <ExperienceAccordion
-                        company={"Department of National Defence - Digital Transformation Office"}
-                        jobTitle={"Digital Solutions Team Lead"}
-                        dates={"08/2024 - Present"}
-                        logo={DNDLogo}
-                        logoalt={"The Canadian flag"}
-                        jobDuties={[]}
-                        skills={["Power BI", "Fabric", "Troubleshooting", "Python", "SQL", "Spark"]}
+                        company={"Department of National Defence - Canadian Army"}
+                        jobTitle={"Data Engineering Team Lead"}
+                        dates={"11/2024 - Present"}
+                        logo={armyLogo}
+                        logoalt={"The logo for the Canadian Army"}
+                        jobDuties={["Leading the Army enterprise data lake project and briefing stakeholders and leadership.",
+                            "Developing ETL scripts for data transformation using AWS Glue and Pyspark.",
+                            "Designing the cloud architecture in alignment with official security directives.",
+                            "Creating transformed data warehouse tables and managing consumer access through API endpoints, with the goal of facilitating analytics and software development"]}
+                        skills={["AWS", "Spark", "Python", "Data warehousing", "API Development", "Azure DevOps", "Git"]}
                         handleChange={handleChange}
                         expanded={expanded}
-                        panel="panel-2"
+                        panel="panel-5"
+                    />
+                </Grid>
+
+                <Grid item xs={10} style={{ justifyContent: "center" }}>
+                    <ExperienceAccordion
+                        company={"Department of National Defence - Digital Transformation Office"}
+                        jobTitle={"Digital Solutions Team Lead"}
+                        dates={"08/2024 - 11/2024"}
+                        logo={DNDLogo}
+                        logoalt={"The Canadian flag"}
+                        jobDuties={["Supporting the Power BI platform for all of National Defence.",
+                            "Communicating with users to fix blockers and identify desired new features.",
+                            "Going through the security assessment approval process to have new features unlocked for the organization.",
+                            "Supervising team members who are working on analytics products for the organization."
+                        ]}
+                        skills={["Power BI", "Fabric", "Troubleshooting", "Python", "Spark"]}
+                        handleChange={handleChange}
+                        expanded={expanded}
+                        panel="panel-4"
                     />
                 </Grid>
 
@@ -41,7 +63,7 @@ export default function Experience({ name }) {
                     <ExperienceAccordion
                         company={"Department of National Defence - Canadian Army"}
                         jobTitle={"Full Stack Web Developer - Team Lead"}
-                        dates={"07/2022 - Present"}
+                        dates={"07/2022 - 08/2024"}
                         extra={"Part time from 09/2023 - 06/2024"}
                         logo={armyLogo}
                         logoalt={"The logo for the Canadian Army"}

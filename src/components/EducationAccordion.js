@@ -3,7 +3,7 @@ import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
-import { Stack, Typography, Button } from "@mui/material";
+import { Stack, Grid, Typography, Button } from "@mui/material";
 import { Link } from 'react-router-dom';
 
 export default function EducationAccordion(props) {
@@ -11,11 +11,18 @@ export default function EducationAccordion(props) {
     return (
         <MuiAccordion square expanded={expanded === panel} onChange={handleChange(panel)} sx={{ backgroundColor: "#353535" }}>
             <MuiAccordionSummary expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem', transform: 'rotate(90deg)' }} />} aria-controls="panel1d-content" id="panel1d-header">
-                <Stack direction="row" spacing={1}>
-                    <img src={logo} width="30" height="30" alt={logoalt} />
-                    <Typography variant="h5">{degree}</Typography>
-                    <Typography variant="h6" color={"#808080"}>{" " + program}</Typography>
-                </Stack>
+                <Grid container spacing={2} alignItems="center">
+                    <Grid item xs={1} justifyContent="left">
+                        <img src={logo} width="30" height="auto" alt={logoalt} />
+                    </Grid>
+                    <Grid item xs={9} md={5} lg={4}>
+                        <Typography variant="h5">{degree}</Typography>
+                    </Grid>
+                    <Grid item xs={2} sx={{display:{xs: "inline-block", md: "none"}}}></Grid>
+                    <Grid item xs={9} md={5} lg={6}>
+                        <Typography variant="h6" color={"#808080"}>{" " + program}</Typography>
+                    </Grid>
+                </Grid>
             </MuiAccordionSummary>
             <MuiAccordionDetails>
                 <Stack direction="row" justifyContent="space-between" marginBottom={1}>
@@ -28,19 +35,19 @@ export default function EducationAccordion(props) {
                         Program Details
                     </Button>
                 </Stack>
-                <Stack direction="column" justifyContent="space-between" spacing={1} width="85%">
-                    <Typography textAlign="left">
+                <Stack direction="column" justifyContent="space-between" spacing={1} width="85%" textAlign="left">
+                    <Typography>
                         {description}
                     </Typography>
-                    <Typography textAlign="left">
+                    <Typography>
                         <b>Selected Coursework:</b>
+                    </Typography>
                         <ul>
                             {selectedCoursework.map((course, i) => {
                                 return (
                                     <li key={i}>{course}</li>)
                             })}
                         </ul>
-                    </Typography>
                     <Stack direction="row" justifyContent="space-between">
                         {projectTitle ? <Button
                             component={Link} to={projectLink}

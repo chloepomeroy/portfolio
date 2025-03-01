@@ -8,8 +8,9 @@ import rentingImage from "../../assets/rentingHelperImage.PNG"
 import psdcImage from "../../assets/psdc.PNG"
 import petMatchingImage from "../../assets/petMatching.PNG"
 import thesisImage from "../../assets/thesisImage.PNG"
+import wargamingImage from "../../assets/MapleReady.jpg"
 // import wrmthImage from "../../assets/wrmth.png"
-import audiotImage from "../../assets/audiot.PNG"
+import audiotImage from "../../assets/audiot.png"
 import finetuningImage from "../../assets/finetuning.png"
 
 export default function Projects() {
@@ -19,35 +20,35 @@ export default function Projects() {
       <Grid item xs={10} style={{ textAlign: "left" }}>
         <PageTitle pageTitle="Projects" />
       </Grid>
-      <Grid item xs={10}>
-        <Grid container spacing={2} padding={2} marginBottom={10}>
-          <Grid item xs={6} md={4} style={{ display: 'flex' }}>
+      <Grid item xs= {12} md={10}>
+        <Grid container spacing={2} padding={2} alignItems="stretch" marginBottom={10}>
+          <Grid item xs={12} sm={6} lg={4} style={{ display: 'flex' }}>
             <ProjectCard
               image={audiotImage}
               imageTitle="AudioT"
               cardTitle="Using Audio Data to Monitor Bird Health in Poultry Farming"
               cardSubTitle="In Partnership with audiot.ai"
               cardDescription="Experimenting with various modelling and feature engineering approaches to identify states and classify time periods based on a large volume of audio files recorded in industrial chicken coops."
-              technologiesUsed={["HMMs", "Research", "Audio Processing", "Classification"]}
+              technologiesUsed={["HMMs", "Audio Processing", "Classification"]}
               moreLink="/audiot-hmm"
               projectLink=""
               projectType={["Data Science"]} />
           </Grid>
 
-          {/* <Grid item xs={6} md={4} style={{ display: 'flex' }}>
+          <Grid item xs={12} sm={6} lg={4} style={{ display: 'flex' }}>
             <ProjectCard
-              image={thesisImage}
+              image={wargamingImage}
               imageTitle="Wargaming"
               cardTitle="Developing an LLM-powered Wargaming Application"
-              cardSubTitle="3rd Place NATO Hackathon 2024"
+              cardSubTitle="NATO Hackathon 2024 Finalist"
               cardDescription="A proof of concept wargaming application that leverages Langchain and GPT-4 to aid in the development and adjudication of wargaming simulations. Created as part of the 2024 NATO Hackathon in Amsterdam."
               technologiesUsed={["Javascript", "Langchain", "GPT-4", "LLMs"]}
               moreLink="/nato-wargaming"
-              projectLink=""
+              demoLink="/nato-wargaming#demo"
               projectType={["Web Development", "Data Science"]} />
-          </Grid> */}
+          </Grid>
 
-          <Grid item xs={6} md={4} style={{ display: 'flex' }}>
+          <Grid item xs={12} sm={6} lg={4} style={{ display: 'flex' }}>
             <ProjectCard
               image={finetuningImage}
               imageTitle="LLM Finetuning"
@@ -60,7 +61,7 @@ export default function Projects() {
               projectType={["Data Science"]} />
           </Grid>
 
-          <Grid item xs={6} md={4} style={{ display: 'flex' }}>
+          <Grid item xs={12} sm={6} lg={4} style={{ display: 'flex' }}>
             <ProjectCard
               image={rentingImage}
               imageTitle="NYC Renting Helper Image"
@@ -73,7 +74,7 @@ export default function Projects() {
               projectType={["Web Development", "Data Science"]} />
           </Grid>
 
-          <Grid item xs={6} md={4} style={{ display: 'flex' }}>
+          <Grid item xs={12} sm={6} lg={4} style={{ display: 'flex' }}>
             <ProjectCard
               image={psdcImage}
               imageTitle="Using AI to Detect Lost Gear in the Ocean"
@@ -86,7 +87,7 @@ export default function Projects() {
               projectType={["Data Science"]} />
           </Grid>
 
-          <Grid item xs={6} md={4} style={{ display: 'flex' }}>
+          <Grid item xs={12} sm={6} lg={4} style={{ display: 'flex' }}>
             <ProjectCard
               image={petMatchingImage}
               imageTitle="Matching Lost Pets"
@@ -100,7 +101,7 @@ export default function Projects() {
               projectType={["Data Science"]} />
           </Grid>
 
-          <Grid item xs={6} md={4} style={{ display: 'flex' }}>
+          <Grid item xs={12} sm={6} lg={4} style={{ display: 'flex' }}>
             <ProjectCard
               image={thesisImage}
               imageTitle="Thesis"

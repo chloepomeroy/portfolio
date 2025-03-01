@@ -41,27 +41,9 @@ export default function NavBar() {
 
   return (
     <AppBar position="sticky">
-      <Container maxWidth="xl">
+      <Container maxWidth={false}>
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            Chloe Pomeroy
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+        <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -97,6 +79,26 @@ export default function NavBar() {
               ))}
             </Menu>
           </Box>
+          
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href=""
+            sx={{
+              mr: 2,
+              display: { xs: "none", sm: "flex" },
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          >
+            Chloe Pomeroy
+          </Typography>
+
+          
           <Typography
             variant="h5"
             noWrap
@@ -104,8 +106,9 @@ export default function NavBar() {
             href=""
             sx={{
               mr: 2,
-              display: { xs: "flex", md: "none" },
+              display: { xs: "flex", sm: "none" },
               flexGrow: 1,
+              fontSize: '1rem',
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
@@ -136,14 +139,14 @@ export default function NavBar() {
               href="https://www.linkedin.com/in/chloepomeroy/"
               color="inherit"
             >
-              <LinkedInIcon sx={{ fontSize: { xs: 20, md: 30 } }} />
+              <LinkedInIcon sx={{ fontSize: { xs: 20, lg: 30 } }} />
             </IconButton>
             <IconButton
               aria-label="github"
               href="https://github.com/chloepomeroy"
               color="inherit"
             >
-              <GitHubIcon sx={{ fontSize: { xs: 20, md: 30 } }} />
+              <GitHubIcon sx={{ fontSize: { xs: 20, lg: 30 } }} />
             </IconButton>
             <IconButton
               aria-label="kaggle"
@@ -157,7 +160,7 @@ export default function NavBar() {
               component={Link}
               to="https://www.linkedin.com/in/chloepomeroy/"
               variant="contained"
-              sx={{ marginLeft: { xs: 0, md: 3 } }}
+              sx={{ marginLeft: { xs: 0, md: 3 }, display: {xs: 'none', lg: 'inline-block'} }}
             >
               Connect
             </Button>
