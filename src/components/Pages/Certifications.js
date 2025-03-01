@@ -1,6 +1,6 @@
 import React from "react";
 import PageTitle from "../Titles";
-import { Grid, Button } from "@mui/material";
+import { Grid, Button, Box } from "@mui/material";
 
 //import images
 import azureDataSci from "../../assets/dataScienceCert.png"
@@ -12,8 +12,9 @@ export default function Certifications() {
 
     return (
         <div id="certifications">
+            <Box sx={{ width: "100%", justifyContent: "center", flexGrow: 1, mb: 8 }}>
             <Grid container spacing={2} padding={2} sx={{ justifyContent: "center" }}>
-                <Grid item xs={10} style={{ textAlign: "left" }}>
+                <Grid item xs={12} style={{ textAlign: "left" }}>
                     <PageTitle pageTitle="Certifications" />
                 </Grid>
                 <Grid item xs={10} marginBottom={2} style={{ textAlign: "left" }}>
@@ -23,20 +24,45 @@ export default function Certifications() {
                 <Grid item xs={10}>
 
                     <Grid container spacing={2} padding={2} >
-                        <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
-                            <img src={azureDataSci} width="400" height="400" alt="Badge for the Azure Data Scienctist associate certification" />
+                        <Grid item xs={12} sm={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
+                            <Box
+                            component="img"
+                            src={azureDataSci}
+                            sx={{
+                                width: { xs: 250, lg: 400 },
+                                height: { xs: 250, lg: 400 }
+                            }}
+                            alt="Badge for the Azure Data Scientist associate certification"
+                            />  
                         </Grid>
 
-                        <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
-                            <img src={azureDataEng} width="400" height="400" alt="Badge for the Azure Data Engineer associate certification" />
+                        <Grid item xs={12} sm={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
+                            <Box
+                            component="img"
+                            src={azureDataEng}
+                            sx={{
+                                width: { xs: 250, lg: 400 },
+                                height: { xs: 250, lg: 400 }
+                            }}
+                            alt="Badge for the Azure Data Engineer associate certification"
+                            /> 
                         </Grid>
 
-                        <Grid item xs={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
-                            <img src={comptiaDataX} width="400" height="400" alt="Badge for the Comptia DataX certification" />
+                        <Grid item xs={12} sm={6} md={4} style={{ display: 'flex', justifyContent: "left" }}>
+                            <Box
+                            component="img"
+                            src={comptiaDataX}
+                            sx={{
+                                width: { xs: 250, lg: 400 },
+                                height: { xs: 250, lg: 400 }
+                            }}
+                            alt="Badge for the Comptia DataX certification"
+                            /> 
                         </Grid>
                     </Grid>
                 </Grid>
             </Grid>
+            </Box>
         </div>
     )
 

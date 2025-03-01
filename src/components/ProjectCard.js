@@ -9,19 +9,22 @@ import { Chip, Box, Grid, Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 export default function ProjectCard(props) {
-    const { image, imageTitle, cardTitle, cardSubTitle, cardDescription, technologiesUsed, moreLink, projectLink, projectType } = props
+    const { image, imageTitle, cardTitle, cardSubTitle, cardDescription, technologiesUsed, moreLink, projectLink, demoLink, projectType } = props
     return (
         <Box sx={{ position: 'relative' }}>
             <Card sx={{
-                width: "52vh",
-                height: "61vh",
+                width: "100%",
+                maxWidth: { xs: "95vw", md: "52vh"},
+                height: "100%",
+                // minHeight: { xs: "auto", sm: "63vh" },
+                // height: { sm: "63vh" },
                 backgroundColor: "#353535",
                 display: 'flex',
                 justifyContent: 'space-between',
                 flexDirection: 'column'
             }} >
                 <CardMedia
-                    sx={{ height: 300 }}
+                    sx={{ height: {xs: 200, sm: 250, md: 300 }}}
                     image={image}
                     title={imageTitle}
                 />
@@ -31,10 +34,10 @@ export default function ProjectCard(props) {
                         <Badge key={i} right={i + 10 + i * 10} sx={{ position: 'absolute', bottom: 10 }} badgeContent={type} color="primary" />)
                 })} */}
                 <CardContent>
-                    <Grid container height={"25vh"}>
+                    <Grid container sx={{height: { xs: "auto", lg: "25vh" }}}>
                         {cardSubTitle !== "" ?
                             <>
-                                <Grid container height={"12vh"} marginBottom={"5px"}>
+                                <Grid container sx={{height: { xs: "auto", lg: "12vh" }}} marginBottom={"5px"}>
                                     <Grid item>
                                         <Typography gutterBottom variant="h5" component="div" textAlign="left">
                                             {cardTitle}
@@ -48,7 +51,7 @@ export default function ProjectCard(props) {
                                 </Grid>
                             </> :
                             <>
-                                <Grid container height={"12vh"} marginBottom={"5px"} alignItems={"center"}>
+                                <Grid container sx={{height: {xs: "auto", lg: "12vh"}}} marginBottom={"5px"} alignItems={"center"}>
                                     <Grid item>
                                         <Typography gutterBottom variant="h5" component="div" textAlign="left">
                                             {cardTitle}
@@ -56,10 +59,10 @@ export default function ProjectCard(props) {
                                     </Grid>
                                 </Grid>
                             </>}
-                        <Grid container spacing={1}>
-                            {technologiesUsed.map((tech) => {
+                        <Grid container spacing={1} flexWrap="wrap" sx={{display: {xs: "none", lg: "flex"}}}>
+                            {technologiesUsed.map((tech, i) => {
                                 return (
-                                    <Grid item>
+                                    <Grid item key={i}>
                                         <Chip label={tech} color="secondary" />
                                     </Grid>
                                 )
@@ -72,7 +75,8 @@ export default function ProjectCard(props) {
                 </CardContent>
                 <CardActions>
                     <Button size="small" component={Link} to={moreLink}>Learn More</Button>
-                    {projectLink === "" ? "" : <Button size="small" href={projectLink}>View Project</Button>}
+                    {projectLink ? <Button size="small" href={projectLink}>View Project</Button> : ""}
+                    {demoLink ? <Button size="small" component={Link} to={demoLink}>View Demo</Button> : ""}
                 </CardActions>
             </Card >
         </Box >
