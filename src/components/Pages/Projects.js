@@ -10,6 +10,7 @@ import petMatchingImage from "../../assets/petMatching.PNG"
 import thesisImage from "../../assets/thesisImage.PNG"
 import wargamingImage from "../../assets/MapleReady.jpg"
 // import wrmthImage from "../../assets/wrmth.png"
+import qclefImage from "../../assets/qclef.PNG"
 import audiotImage from "../../assets/audiot.png"
 import finetuningImage from "../../assets/finetuning.png"
 
@@ -22,6 +23,20 @@ export default function Projects() {
       </Grid>
       <Grid item xs= {12} md={10}>
         <Grid container spacing={2} padding={2} alignItems="stretch" marginBottom={10}>
+        <Grid item xs={12} sm={6} lg={4} style={{ display: 'flex' }}>
+            <ProjectCard
+              image={qclefImage}
+              imageTitle="Matching Lost Pets"
+              cardTitle="Quantum Annealing for Machine Learning: Applications"
+              cardSubTitle="Accepted to Quantum CLEF 2025"
+              cardDescription="As part of the Quantum CLEF 2025 Lab at the CLEF conference, this project investigated the use of quantum vs. classical 
+                    annealing techniques for tackling instance selection, feature selection, and clustering."
+              technologiesUsed={["Quantum Computing", "Instance Selection", "Research"]}
+              moreLink="/qclef2025"
+              projectLink="https://arxiv.org/abs/2507.15063"
+              projectType={["Data Science"]} />
+          </Grid>
+
           <Grid item xs={12} sm={6} lg={4} style={{ display: 'flex' }}>
             <ProjectCard
               image={audiotImage}
