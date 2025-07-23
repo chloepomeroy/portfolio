@@ -26,7 +26,7 @@ export default function Projects() {
         <Grid item xs={12} sm={6} lg={4} style={{ display: 'flex' }}>
             <ProjectCard
               image={qclefImage}
-              imageTitle="Matching Lost Pets"
+              imageTitle="Quantum Clustering"
               cardTitle="Quantum Annealing for Machine Learning: Applications"
               cardSubTitle="Accepted to Quantum CLEF 2025"
               cardDescription="As part of the Quantum CLEF 2025 Lab at the CLEF conference, this project investigated the use of quantum vs. classical 
