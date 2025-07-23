@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.5c52885d.css",
-    "main.js": "/portfolio/static/js/main.caafc710.js",
+    "main.js": "/portfolio/static/js/main.114898fb.js",
     "static/media/lostPet.pdf": "/portfolio/static/media/lostPet.1108aa927e6caab26751.pdf",
     "static/media/linkedin_photo.png": "/portfolio/static/media/linkedin_photo.5bb5a9ae1eb12829a8e8.png",
     "static/media/PSDC-Final.pdf": "/portfolio/static/media/PSDC-Final.699a0d3699498da8646a.pdf",
@@ -12,6 +12,7 @@
     "static/media/petMatching.PNG": "/portfolio/static/media/petMatching.d8002d9ebe3b0f682600.PNG",
     "static/media/mcmasterLogo.png": "/portfolio/static/media/mcmasterLogo.bb54b355bcc3e54b0069.png",
     "static/media/cse6242_final_report.pdf": "/portfolio/static/media/cse6242_final_report.dc27f767e5dff5c2d299.pdf",
+    "static/media/qclef.PNG": "/portfolio/static/media/qclef.a55157fffe92e0b30491.PNG",
     "static/media/audiot.png": "/portfolio/static/media/audiot.9237de2aacdaef699854.png",
     "static/media/petYolo.PNG": "/portfolio/static/media/petYolo.44c991e6e4c109df0de1.PNG",
     "static/media/dataEngCert.png": "/portfolio/static/media/dataEngCert.7cbfb552bfca446607c8.png",
@@ -33,10 +34,10 @@
     "static/media/kaggle-icon.svg": "/portfolio/static/media/kaggle-icon.827f287861646365ef2230061bf2f4a5.svg",
     "index.html": "/portfolio/index.html",
     "main.5c52885d.css.map": "/portfolio/static/css/main.5c52885d.css.map",
-    "main.caafc710.js.map": "/portfolio/static/js/main.caafc710.js.map"
+    "main.114898fb.js.map": "/portfolio/static/js/main.114898fb.js.map"
   },
   "entrypoints": [
     "static/css/main.5c52885d.css",
-    "static/js/main.caafc710.js"
+    "static/js/main.114898fb.js"
   ]
 }
