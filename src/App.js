@@ -24,6 +24,7 @@ import ThesisProject from "./components/Pages/ProjectPages/ThesisPage";
 import WargamingProject from "./components/Pages/ProjectPages/WargamingProject";
 import AudioTProject from "./components/Pages/ProjectPages/AudioTProject"
 import FinetuningProject from "./components/Pages/ProjectPages/LLMFinetuningProject";
+import QClefProject from "./components/Pages/ProjectPages/QClefProject";
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
         <Route path="/lostPets" element={<LostPetProject />} />
         <Route path="/cozyGames" element={<CozySteamProject />} />
         <Route path="/thesis" element={<ThesisProject />} />
+        <Route path="/qclef2025" element={<QClefProject />} />
         {/* <Route path="/lss-wrmth" element={<WrmthProject />} /> */}
         <Route path="/nato-wargaming" element={<WargamingProject />} />
         <Route path="/audiot-hmm" element={<AudioTProject />} />
