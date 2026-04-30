@@ -23,7 +23,20 @@ export default function Projects() {
       </Grid>
       <Grid item xs= {12} md={10}>
         <Grid container spacing={2} padding={2} alignItems="stretch" marginBottom={10}>
-        <Grid item xs={12} sm={6} lg={4} style={{ display: 'flex' }}>
+
+          <Grid item xs={12} sm={6} lg={4} style={{ display: 'flex' }}>
+            <ProjectCard
+              image={}
+              imageTitle="Quantum Clustering"
+              cardTitle="Creating an Agentic AI-powered Cyber Incident Response Application"
+              cardSubTitle="NATO Hackaton 2026 Winner"
+              cardDescription="A real-time and collaborative Incident Response application that leverages Agentic AI orchestrated with Langgraph and GPT-4 to aid in the quick resolution of cyber incidents. Created as part of the 2026 NATO Hackathon in Reykjavik."
+              technologiesUsed={["Agentic AI", "Langgraph", "Cybersecurity"]}
+              moreLink="/nato-incident-response"
+              projectType={["Web Development","Data Science"]} />
+          </Grid>
+
+          <Grid item xs={12} sm={6} lg={4} style={{ display: 'flex' }}>
             <ProjectCard
               image={qclefImage}
               imageTitle="Quantum Clustering"
