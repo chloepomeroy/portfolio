@@ -23,10 +23,18 @@ export default function IncidentResponseProject() {
                 </Grid>
                 <Grid item xs={10} style={{ justifyContent: "center" }}>
                     <Typography marginBottom={2}>
-                        The main problems we were tasked with addressing were:
+                        This project was the winning solution to the Automated Incident response challenge of the NATO TIDE Hackathon 2026, 
+                        sponsored by NATO Allied Command Transformation and the Cyber Emergency Response Team of Iceland. The challenge sponsors
+                        outlined the problem space aaand my team turned that into concrete features and an agentic workflow that we implemented 
+                        over the course of 4 days in a functioning prototype.
+                    </Typography>
+                </Grid>
+                <Grid item xs={10} style={{ justifyContent: "center" }}>
+                    <Typography marginBottom={2}>
+                        The main goals we aimed to achieve were:
                         <ul>
-                        <li>Real-time collaboration so that Security Analysts can work together respond to incidents</li>
-                        <li>Volume of event and log data that analysts needed to manually read through</li>
+                        <li>Real-time collaboration so that Security Analysts could work together to respond to incidents</li>
+                        <li>Summarization and correlation of a large volume of event and log data to save analysts time</li>
                         <li>Prioritization and assignment of incidents to the appropriate analysts</li>
                         </ul>
                     </Typography>
