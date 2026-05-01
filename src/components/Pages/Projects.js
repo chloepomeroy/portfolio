@@ -31,7 +31,7 @@ export default function Projects() {
               cardSubTitle="NATO Hackathon 2026 Winner"
               cardDescription="A real-time and collaborative Incident Response application that leverages Agentic AI orchestrated with Langgraph to aid in the quick resolution of cyber incidents. Created as part of the 2026 NATO Hackathon in Reykjavik."
               technologiesUsed={["Agentic AI", "Langgraph", "Cybersecurity"]}
-              moreLink="/nato-incident-response"
+              moreLink="/nato-ir"
               projectType={["Web Development", "Data Science"]} />
           </Grid>
 
