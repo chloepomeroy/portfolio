@@ -1,9 +1,9 @@
 import { Grid, Typography, Button } from "@mui/material";
 import React from "react";
-import PageTitle from "../../Titles";
+import PageTitle from "../../Titles.js";
 import AgenticFlow from "../../../diagrams/ir_agentic_diagram.js"
 import Services from "../../../diagrams/ir_services_diagram.js"
-import MermaidDiagram from "../../MermaidDiagram";
+import MermaidDiagram from "../../MermaidDiagram.js";
 
 export default function IncidentResponseProject() {
 
@@ -24,7 +24,7 @@ export default function IncidentResponseProject() {
                 </Grid>
                 <Grid item xs={10} style={{ justifyContent: "center" }}>
                     <Typography marginBottom={2}>
-                        This project was the winning solution to the Automated Incident response challenge of the NATO TIDE Hackathon 2026, 
+                        We created the winning solution to the Automated Incident response challenge of the NATO TIDE Hackathon 2026, 
                         sponsored by NATO Allied Command Transformation and the Cyber Emergency Response Team of Iceland. The challenge sponsors
                         outlined the problem space aaand my team turned that into concrete features and an agentic workflow that we implemented 
                         over the course of 4 days in a functioning prototype.
@@ -63,16 +63,7 @@ export default function IncidentResponseProject() {
                         Services:
                     </Typography>
                     
-                    <MermaidDiagram chart={Services}></MermaidDiagram>
-                    <Typography>
-                        <ul>
-                            <li>Feed Orchestrator — plugin system, SQLite state, routes events to the pipeline</li>
-                            <li>Agents Service — hosts the LangGraph pipeline, owns all Neo4j reads and writes</li>
-                            <li>Core API — unified gateway for AI chat, incident/user CRUD via MySQL, Neo4j graph proxy</li>
-                            <li>Socket Service — per-incident chat rooms with Socket.IO for real-time collaboration</li>
-                            <li>Frontend — React + MUI dashboard with plugin management, incident list, and the @Sentry AI chat assistant</li>
-                        </ul>
-                    </Typography>                
+                    <MermaidDiagram chart={Services}></MermaidDiagram>              
                 </Grid>
             </Grid>
         </Grid>

@@ -1,26 +1,39 @@
-const chart = `graph LR
-    Event["🔔 New Event<br/>From Feed"]
-    Dedup{"Already<br/>Seen?"}
-    Skip["⏭️ Skip"]
-    Intake["📥 Intake<br/>Classify source"]
-    Parallel["⚡ Extract Entities<br/>Each Plugin Type in parallel"]
-    Triage["⚖️ Triage<br/>Score confidence"]
-    Decision{"Incident?"}
-    Discard["🗑️ Discard"]
-    Match["👤 Assign Analyst"]
-    Remed["🛡️ Generate Actions"]
-    Store["💾 Save Incident"]
+const chart = `flowchart TD
+    START([Start]) --> INTAKE[Intake Node]
 
-    Event --> Dedup
-    Dedup -->|"Yes"| Skip
-    Dedup -->|"No"| Intake
-    Intake --> Parallel
-    Parallel --> Triage
-    Triage --> Decision
-    Decision -->|"No"| Discard
-    Decision -->|"Yes"| Match
-    Decision -->|"Yes"| Remed
-    Match --> Store
-    Remed --> Store
+    subgraph SOURCES[Parallel Source Nodes]
+        direction LR
+        MISP_NODE[MISP Node]
+        SENTINEL_NODE[Sentinel Node]
+        CERTIS_NODE[CERT-IS Node]
+        MORE_SOURCE["Other Sources
+         (SIEM, EDR, etc.)"]
+    end
+
+    INTAKE --> MISP_NODE
+    INTAKE --> SENTINEL_NODE
+    INTAKE --> CERTIS_NODE
+    INTAKE --> MORE_SOURCE
+
+    MISP_NODE --> TRIAGE[Triage Node]
+    SENTINEL_NODE --> TRIAGE
+    CERTIS_NODE --> TRIAGE
+    MORE_SOURCE --> TRIAGE
+
+    subgraph POST_TRIAGE[Parallel Post-Triage]
+        direction LR
+        MATCHING[Matching Node]
+        REMEDIATION[Remediation Node]
+    end
+
+    TRIAGE --> MATCHING
+    TRIAGE --> REMEDIATION
+
+    MATCHING --> END([End])
+    REMEDIATION --> END
+
+    %% Style the "Additional Source" as a dashed, lighter placeholder
+    classDef future stroke-dasharray: 5 5,fill:#ffffff,color:#555;
+    class MORE_SOURCE future;
 `
 export default chart;

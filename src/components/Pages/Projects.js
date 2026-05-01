@@ -25,7 +25,7 @@ export default function Projects() {
         <Grid container spacing={2} padding={2} alignItems="stretch" marginBottom={10}>
           <Grid item xs={12} sm={6} lg={4} style={{ display: 'flex' }}>
             <ProjectCard
-              image={}
+              image=""
               imageTitle=""
               cardTitle="Agentic AI-Powered Cyber Incident Response"
               cardSubTitle="NATO Hackathon 2026 Winner"
