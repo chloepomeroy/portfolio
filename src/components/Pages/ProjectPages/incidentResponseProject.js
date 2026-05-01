@@ -1,8 +1,9 @@
 import { Grid, Typography, Button } from "@mui/material";
 import React from "react";
 import PageTitle from "../../Titles";
-import AgenticFlow from IR_agentic.png
-import Services from IR_services.png
+import AgenticFlow from "../../../diagrams/ir_agentic_diagram.js"
+import Services from "../../../diagrams/ir_services_diagram.js"
+import MermaidDiagram from "../../MermaidDiagram";
 
 export default function IncidentResponseProject() {
 
@@ -44,7 +45,7 @@ export default function IncidentResponseProject() {
                         Agentic Workflow:
                     </Typography>
                     
-                    <img src={AgenticFlow} width="100%"></img>                    
+                    <MermaidDiagram chart={AgenticFlow}></MermaidDiagram>                    
                 </Grid>
                 <Grid item xs={10} style={{ justifyContent: "center" }}>
                     <Typography marginBottom={2}>
@@ -62,7 +63,7 @@ export default function IncidentResponseProject() {
                         Services:
                     </Typography>
                     
-                    <img src={Services} width="100%"></img>
+                    <MermaidDiagram chart={Services}></MermaidDiagram>
                     <Typography>
                         <ul>
                             <li>Feed Orchestrator — plugin system, SQLite state, routes events to the pipeline</li>
